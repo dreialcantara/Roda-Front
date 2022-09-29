@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import { useSelector } from "react-redux";
 import { ListarUsuario } from "../../services/MainApi/listarusuarios";
@@ -6,6 +7,7 @@ import { removeUser } from "../../store/modules/user";
 
 function AllUsers() {
   const user = useSelector((store: RootStore) => store.userReduce);
+  const [lista, setLista] = useState("");
 
   const listar = async (event: any) => {
     event.preventDefault();
@@ -18,6 +20,8 @@ function AllUsers() {
         return alert("Algo deu errado");
       } else {
         console.log(response.data);
+        setLista(response.data);
+        console.log(lista);
       }
     } catch (error) {
       alert("Algo deu errado");
@@ -36,6 +40,7 @@ function AllUsers() {
       <Button variant="danger" onClick={sair}>
         Sair
       </Button>
+      <p>{` A resposta da requisição é: ${lista}`}</p>
     </>
   );
 }
