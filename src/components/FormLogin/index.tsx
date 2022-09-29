@@ -23,6 +23,8 @@ function FormLogin() {
         return alert("Algo deu errado");
       } else {
         console.log(response);
+        localStorage.setItem("token", response.data.token);
+        window.location.pathname = "/allusers";
       }
     } catch (error) {
       alert("Algo deu errado");
