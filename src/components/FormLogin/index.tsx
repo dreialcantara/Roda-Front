@@ -1,13 +1,17 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { useDispatch } from "react-redux";
+import { setUser } from "../../store/modules/user";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FormEvent, useState } from "react";
 import { loginUsuario } from "../../services/MainApi/login";
+import { Link } from "react-router-dom";
 
 function FormLogin() {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+  const dispatch = useDispatch();
 
   const login = async (event: FormEvent) => {
     event.preventDefault();
@@ -22,9 +26,16 @@ function FormLogin() {
       if (response.status !== 200) {
         return alert("Algo deu errado");
       } else {
-        console.log(response);
-        localStorage.setItem("token", response.data.token);
-        window.location.pathname = "/allusers";
+        console.log(response.data);
+        dispatch(
+          setUser({
+            token: response.data.token,
+            email,
+          })
+        );
+
+        // localStorage.setItem("token", response.data.token);
+        // window.location.pathname = "/allusers";
       }
     } catch (error) {
       alert("Algo deu errado");
@@ -59,12 +70,11 @@ function FormLogin() {
           }}
         />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
+
       <Button variant="primary" type="submit">
         Submit
       </Button>
+      <Link to="/allusers">Listar Usuários</Link>
     </Form>
   );
 }
