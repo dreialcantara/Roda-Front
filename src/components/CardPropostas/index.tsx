@@ -1,8 +1,10 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { RootStore } from "../../store";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+import { useSelector } from "react-redux";
 
 const imglivro1 = require("../../assets/img/livro1.png");
 const imglivro2 = require("../../assets/img/livro2.png");
@@ -14,6 +16,9 @@ const livro = <a href="/">Eragon</a>;
 const livrousuario = <a href="/">A cantiga</a>;
 
 function BasicExample() {
+  const user = useSelector((store: RootStore) => store);
+  // acima a const usuario que tera que ser usada para resgatar os dados
+
   return (
     <Card className="d-flex flex-column  border-0" style={{ width: "16rem" }}>
       <Card.Title className="p-0 m-0 align-self-center">Eragon #1</Card.Title>
