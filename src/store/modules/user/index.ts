@@ -18,7 +18,7 @@ const userReduce = createSlice({
         isLogged: true,
       });
     },
-    removeUser(state, action) {
+    removeUser(state) {
       Object.assign(state, {
         token: undefined,
         email: undefined,
