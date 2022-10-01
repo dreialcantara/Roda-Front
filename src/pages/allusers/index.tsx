@@ -8,7 +8,7 @@ import { removeUser } from "../../store/modules/user";
 import { useDispatch } from "react-redux";
 
 function AllUsers() {
-  const user = useSelector((store: RootStore) => store.userReduce);
+  const user = useSelector((store: RootStore) => store);
   const [lista, setLista] = useState<string[]>([]);
   const dispatch = useDispatch();
 

@@ -34,7 +34,7 @@ function FormLogin() {
           })
         );
 
-        localStorage.setItem("token", response.data.token);
+        // localStorage.setItem("token", response.data.token);
         // window.location.pathname = "/allusers";
       }
     } catch (error) {
