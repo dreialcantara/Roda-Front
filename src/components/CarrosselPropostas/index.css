@@ -1,0 +1,20 @@
+.titulo {
+    margin-left: 15%;
+    margin-top: 1.5%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    background-color: #F76C5E;
+    width: 22.5%;
+    height: 9%;
+    margin-bottom: 0%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%;
+    font-size: 140%;
+    /* or 160% */
+
+    letter-spacing: 0.119149px;
+}

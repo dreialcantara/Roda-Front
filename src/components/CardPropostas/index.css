@@ -1,0 +1,58 @@
+.card-title {
+    font-family: 'Source Sans Pro' !important;
+    color: #324376;
+
+}
+
+.card-text {
+    font-family: 'Source Sans Pro' !important;
+
+    line-height: 125% !important;
+
+
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /** número de linhas que você quer exibir */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.setaup {
+    margin-left: 20%;
+}
+
+.setadown {
+    margin-top: 11% !important;
+    margin-left: 3% !important;
+}
+
+.imglivro1 {
+    width: 44% !important;
+}
+
+.img-livro2 {
+    align-self: end;
+    margin-left: 8%;
+}
+
+a {
+    color: #324376 !important;
+    text-decoration: none;
+
+}
+
+
+button {
+
+    font-family: 'Roboto' !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    font-size: 0.75rem !important;
+    background-color: #F68E5F !important;
+    border-style: none !important;
+    padding-top: 8.1% !important;
+    padding-bottom: 8.1% !important;
+}
