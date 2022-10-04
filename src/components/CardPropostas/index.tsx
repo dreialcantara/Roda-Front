@@ -46,14 +46,14 @@ function BasicExample() {
         <img
           src={setadown}
           alt=""
-          className="setadown img-fluid align-self-start"
+          className="img-fluid setadown img-fluid align-self-start"
         />
       </div>
       <Card.Body className="pt-3 d-flex flex-column align-items-center">
         <Card.Text className="text-center w-75">
           {name} deseja trocar {livro} pelo seu livro {livrousuario}
         </Card.Text>
-        <Button className="rounded-5 w-75" variant="primary">
+        <Button className=" buttoncard rounded-5 w-75" variant="primary">
           Ver proposta
         </Button>
       </Card.Body>

@@ -1,0 +1,74 @@
+.botao-criar {
+    background-color: white;
+    color: #324376;
+    border-color: #324376;
+}
+
+.botao-criar:hover {
+    background-color: #324376 !important;
+    color: white !important;
+    border-color: #324376 !important;
+}
+
+.botao-login {
+    background-color: #324376;
+    color: white;
+    border-color: #324376;
+}
+
+.botao-login:hover {
+    background-color: white !important;
+    color: #324376 !important;
+    border-color: #324376 !important;
+}
+
+input {
+
+    border-radius: 0% !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    background-color: white !important;
+    font-family: "Roboto" !important;
+    font-size: 0.75rem !important;
+}
+
+input:hover {
+    border: 1px solid #324376 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    background-color: white !important;
+
+    border-color: #324376;
+
+
+}
+
+input:focus {
+    border: 1px solid #324376 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    box-shadow: 0 0 0 0 !important;
+    outline: 0 !important;
+}
+
+.container {
+    text-align: center;
+    font-family: "Roboto";
+    color: #324376;
+    line-height: 20px;
+    font-weight: 700 !important;
+
+
+
+}
+
+.container h5 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 20px;
+    font-family: "Source Sans Pro";
+    color: #F68E5F;
+}
