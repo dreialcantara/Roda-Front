@@ -2,6 +2,15 @@
     background-color: white;
     color: #324376;
     border-color: #324376;
+
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 12px;
+
+
+
 }
 
 .botao-criar:hover {
@@ -14,6 +23,17 @@
     background-color: #324376;
     color: white;
     border-color: #324376;
+    margin-left: -1rem;
+
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 12px;
+    position: absolute;
+
+
+
 }
 
 .botao-login:hover {
@@ -54,6 +74,15 @@ input:focus {
     outline: 0 !important;
 }
 
+.form-label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #586BA4;
+}
+
 .container {
     text-align: center;
     font-family: "Roboto";
@@ -63,6 +92,11 @@ input:focus {
 
 
 
+}
+
+.container h1 {
+    font-weight: 700 !important;
+    line-height: 2rem !important;
 }
 
 .container h5 {

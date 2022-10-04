@@ -6,11 +6,9 @@ import { setUser } from "../../store/modules/user";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FormEvent, useState } from "react";
 import { loginUsuario } from "../../services/MainApi/login";
-import { Link } from "react-router-dom";
 import "./index.css";
 
 function FormLogin() {
-  const linha = require("../../assets/img/Linha.png");
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const dispatch = useDispatch();
@@ -35,6 +33,7 @@ function FormLogin() {
             email,
           })
         );
+        window.location.pathname = "/teste";
 
         // localStorage.setItem("token", response.data.token);
         // window.location.pathname = "/allusers";
@@ -45,7 +44,7 @@ function FormLogin() {
   };
 
   return (
-    <div className="w-100 d-flex justify-content-center">
+    <div className="d-flex align-items-center justify-content-center">
       <Form className="w-25" onSubmit={login}>
         <div className="container">
           <h1>Entre na Roda!</h1>
@@ -74,14 +73,17 @@ function FormLogin() {
             }}
           />
         </Form.Group>
-        <Form.Group className="d-flex justify-content-center">
-          <Button className="botao-criar rounded-5" type="submit">
-            Criar Conta
-          </Button>
-          <Button className="botao-login rounded-5" type="submit">
-            Fazer Login
-          </Button>
-        </Form.Group>
+        <div className="d-flex justify-content-start">
+          <Form.Group className="">
+            <Button className="botao-criar rounded-5" type="submit">
+              Criar Conta
+            </Button>
+
+            <Button className="botao-login rounded-5" type="submit">
+              Fazer Login
+            </Button>
+          </Form.Group>
+        </div>
       </Form>
     </div>
   );
