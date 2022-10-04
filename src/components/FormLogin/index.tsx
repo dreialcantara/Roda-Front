@@ -73,7 +73,7 @@ function FormLogin() {
             }}
           />
         </Form.Group>
-        <div className="d-flex justify-content-start">
+        <div className="mt-5 d-flex justify-content-start">
           <Form.Group className="">
             <Button className="botao-criar rounded-5" type="submit">
               Criar Conta
