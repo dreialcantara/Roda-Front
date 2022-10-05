@@ -3,10 +3,10 @@
     color: #324376;
     border-color: #324376;
 
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 2.9vh;
+    padding-bottom: 2.9vh;
     font-size: 12px;
     font-weight: 700 !important;
 
@@ -24,12 +24,12 @@
     background-color: #324376;
     color: white;
     border-color: #324376;
-    margin-left: -1rem;
+    margin-left: 1vw;
 
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 2.9vh;
+    padding-bottom: 2.9vh;
     font-size: 12px;
     position: absolute;
     font-weight: 700 !important;
@@ -77,6 +77,47 @@ input:focus {
 }
 
 .form-label {
+    text-align: left !important;
+}
+
+hr {
+    margin: auto;
+    margin-bottom: 0.2rem;
+}
+
+.containerform {
+    margin-top: 25vh;
+}
+
+@media (max-width: 1200px) {
+    .containerform {
+
+        margin-top: 5vh;
+    }
+}
+
+@media (max-width: 819px) {
+    .containerform {
+
+        margin-top: 25vh;
+    }
+}
+
+.passeye {
+    margin-top: 1.7%;
+    margin-left: 23%;
+    position: absolute;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .passeye {
+        margin-left: 60vw;
+        margin-top: 3vh;
+    }
+}
+
+.form-label {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -102,9 +143,21 @@ input:focus {
 }
 
 .container h5 {
+
     font-weight: 700;
     font-size: 1rem;
-    line-height: 20px;
+    line-height: 1rem;
     font-family: "Source Sans Pro";
     color: #F68E5F;
+}
+
+.botaocontainer {
+    margin-top: 5vh;
+    margin-left: -10vw;
+}
+
+@media (max-width: 1200px) {
+    .botaocontainer {
+        margin-left: -18vw;
+    }
 }

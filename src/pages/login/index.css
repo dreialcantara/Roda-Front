@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+    .imglogin {
+        display: none;
+    }
+}
+
+ul {
+    list-style: none !important;
+    display: flex;
+    margin-right: 12vw;
+    margin-top: -6vh;
+    display: flex;
+    justify-content: end;
+}
+
+li {
+    margin-right: 5vw;
+    font-family: "Roboto";
+    font-size: 80%;
+    color: #F68E5F;
+    font-weight: 700;
+}
+
+.footerlogin {
+    color: #F68E5F !important;
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+@media (max-width: 1200px) {
+    .footerlogin {
+        display: none;
+    }
+
+    .passeye {
+        display: none;
+    }
+
+}

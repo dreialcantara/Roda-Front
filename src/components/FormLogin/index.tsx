@@ -11,7 +11,10 @@ import "./index.css";
 function FormLogin() {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+  const [hidePass, setHidePass] = useState("password");
   const dispatch = useDispatch();
+
+  const passeye = require("../../assets/img/passeye.png");
 
   const login = async (event: FormEvent) => {
     event.preventDefault();
@@ -44,37 +47,58 @@ function FormLogin() {
   };
 
   return (
-    <div className="d-flex align-items-center justify-content-center">
-      <Form className="w-25" onSubmit={login}>
-        <div className="container">
-          <h1>Entre na Roda!</h1>
-          <h5>Converse agora com pessoas que estão lendo o mesmo que você!</h5>
-        </div>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label className="mb-0">E-mail</Form.Label>
-          <Form.Control
-            type="e-mail"
-            placeholder="email@email.com"
-            value={email}
-            onChange={(event) => {
-              setEmail(event.target.value);
-            }}
-          />
-        </Form.Group>
+    <div>
+      <div className="containerform d-flex align-items-center justify-content-center">
+        <Form className="w-75" onSubmit={login}>
+          <div className="container">
+            <h1>Entre na Roda!</h1>
+            <hr className="w-50"></hr>
+            <h5>
+              Converse agora com pessoas que estão lendo o mesmo que você!
+            </h5>
+          </div>
+          <Form.Group
+            className="mb-3 d-flex flex-column"
+            controlId="formBasicEmail"
+          >
+            <Form.Label className="form-label mb-0 ">E-mail</Form.Label>
+            <Form.Control
+              type="email"
+              placeholder="email@email.com"
+              value={email}
+              onChange={(event) => {
+                setEmail(event.target.value);
+              }}
+            />
+          </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label className="mb-0">Senha</Form.Label>
-          <Form.Control
-            type="password"
-            placeholder="Senha#123"
-            value={password}
-            onChange={(event) => {
-              setPassword(event.target.value);
-            }}
-          />
-        </Form.Group>
-        <div className="mt-5 d-flex justify-content-start">
-          <Form.Group className="">
+          <Form.Group
+            className="mb-3 d-flex flex-column"
+            controlId="formBasicPassword"
+          >
+            <Form.Label className=" mb-0">Senha</Form.Label>
+            <Form.Control
+              type={hidePass}
+              placeholder="Senha#123"
+              value={password}
+              onChange={(event) => {
+                setPassword(event.target.value);
+              }}
+            />{" "}
+            <img
+              className="passeye"
+              src={passeye}
+              alt=""
+              onClick={() => {
+                if (hidePass === "password") {
+                  setHidePass("text");
+                } else {
+                  setHidePass("password");
+                }
+              }}
+            />
+          </Form.Group>
+          <div className="botaocontainer">
             <Button className="botao-criar rounded-5" type="submit">
               Criar Conta
             </Button>
@@ -82,9 +106,9 @@ function FormLogin() {
             <Button className="botao-login rounded-5" type="submit">
               Fazer Login
             </Button>
-          </Form.Group>
-        </div>
-      </Form>
+          </div>
+        </Form>
+      </div>
     </div>
   );
 }
