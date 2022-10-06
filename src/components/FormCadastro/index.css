@@ -85,21 +85,21 @@ hr {
     margin-bottom: 0.2rem;
 }
 
-.containerform {
-    margin-top: 25vh;
+.containerformcadastro {
+    margin-top: 0vh;
 }
 
 @media (max-width: 1200px) {
-    .containerform {
+    .containerformcadastro {
 
         margin-top: 5vh;
     }
 }
 
 @media (max-width: 819px) {
-    .containerform {
+    .containerformcadastro {
 
-        margin-top: 25vh;
+        margin-top: 20vh;
     }
 }
 

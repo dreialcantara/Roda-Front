@@ -14,6 +14,7 @@ export default function Routes() {
       <WrapperRoutes>
         <Route path="/teste" element={<TesteComponentes />} />
         <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/allusers" element={<AllUsers />} />
       </WrapperRoutes>

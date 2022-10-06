@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FormEvent, useState } from "react";
 import { loginUsuario } from "../../services/MainApi/login";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 function FormLogin() {
   const [email, setEmail] = useState<string>("");
@@ -99,9 +100,13 @@ function FormLogin() {
             />
           </Form.Group>
           <div className="botaocontainer">
-            <Button className="botao-criar rounded-5" type="submit">
-              Criar Conta
-            </Button>
+            <Link
+              className="botao-criar rounded-5 btn btn-primary"
+              role="button"
+              to="/cadastro"
+            >
+              Criar conta
+            </Link>
 
             <Button className="botao-login rounded-5" type="submit">
               Fazer Login
