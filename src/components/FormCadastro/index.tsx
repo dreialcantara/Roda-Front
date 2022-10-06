@@ -31,7 +31,7 @@ function FormCadastro() {
         setCPasswordClass("form-control");
       }
     }
-  }, [confPassword]);
+  }, [confPassword, isCPasswordDirty, password]);
 
   const handleCPassword = (e: any) => {
     setConfPassword(e.target.value);
