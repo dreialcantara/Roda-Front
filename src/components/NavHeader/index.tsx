@@ -6,6 +6,10 @@ import Form from "react-bootstrap/Form";
 import "./index.css";
 
 const logo = require("../../assets/img/Logo.png");
+const grupoicon = require("../../assets/img/grupoicon.png");
+const chaticon = require("../../assets/img//chaticon.png");
+const notificationicon = require("../../assets/img/notificationicon.png");
+const fotoperfilicon = require("../../assets/img/fotoperfilicon.png");
 
 function NavHeader() {
   return (
@@ -29,10 +33,19 @@ function NavHeader() {
         </div>
         <div>
           {" "}
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <Nav className="">
+            <Nav.Link href="#home">
+              <img src={grupoicon} alt="" />
+            </Nav.Link>
+            <Nav.Link href="#features">
+              <img src={chaticon} alt="" />
+            </Nav.Link>
+            <Nav.Link href="#pricing">
+              <img src={notificationicon} alt="" />
+            </Nav.Link>
+            <Nav.Link href="#pricing">
+              <img src={fotoperfilicon} alt="" />
+            </Nav.Link>
           </Nav>
         </div>
       </Container>
