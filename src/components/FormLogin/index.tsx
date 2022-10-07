@@ -37,7 +37,7 @@ function FormLogin() {
             email,
           })
         );
-        window.location.pathname = "/login";
+        window.location.pathname = "/teste";
 
         // localStorage.setItem("token", response.data.token);
         // window.location.pathname = "/allusers";

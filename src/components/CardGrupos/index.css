@@ -1,0 +1,55 @@
+.cardgrupos {
+    background-image: url("../../assets/img/cardgrupos.png");
+    background-size: cover;
+    color: white;
+    font-size: 12px;
+
+
+
+
+}
+
+.headercardgrupos {
+    font-family: "Roboto";
+    font-weight: 700;
+
+}
+
+.titulocardgrupo {
+    margin-top: -1vh;
+    font-size: 20px;
+    line-height: 31px;
+    margin-left: 1.2vw;
+    font-family: "Source Sans Pro";
+
+
+}
+
+.labelgrupo {
+    background-color: #DB6E6E;
+    width: 26.5%;
+    color: black;
+    margin-left: 1.2vw;
+    line-height: 20px;
+}
+
+.encontrocard {
+
+    height: 38px;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+.footercardgrupo {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Source Sans Pro";
+
+}
+
+.footercardgrupo2 {
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Source Sans Pro";
+
+}
