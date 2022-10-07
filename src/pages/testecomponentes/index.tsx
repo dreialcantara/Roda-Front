@@ -1,9 +1,9 @@
 import React from "react";
 
-import CarrosselGrupos from "../../components/CarrosselGrupos";
+import NavHeader from "../../components/NavHeader";
 
 function TesteComponentes() {
-  return <CarrosselGrupos />;
+  return <NavHeader />;
 }
 
 export default TesteComponentes;

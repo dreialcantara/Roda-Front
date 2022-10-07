@@ -1,0 +1,35 @@
+.containerheader {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.navbar {
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    background-color: #324376;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-nav a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.navbar form input {
+    width: 27.35vw;
+    height: 8vh;
+
+    background: url("../../assets/img/lupavetor.png") no-repeat left;
+    background-position: 15px 16px;
+}
+
+.navbar form input:focus {
+    background-image: none;
+}
