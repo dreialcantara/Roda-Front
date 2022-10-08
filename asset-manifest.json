@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Roda-Front/static/css/main.fe95eeac.css",
+    "main.js": "/Roda-Front/static/js/main.9fd3a1ca.js",
+    "static/media/imgdesafio.png": "/Roda-Front/static/media/imgdesafio.dfadb810333f7295df99.png",
+    "static/media/cardgrupos.png": "/Roda-Front/static/media/cardgrupos.08cca992a44ff0fc31de.png",
+    "static/media/imagelogin.png": "/Roda-Front/static/media/imagelogin.590be684b6bcb0995583.png",
+    "static/media/revicons.eot": "/Roda-Front/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/Roda-Front/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/Roda-Front/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/Roda-Front/index.html",
+    "main.fe95eeac.css.map": "/Roda-Front/static/css/main.fe95eeac.css.map",
+    "main.9fd3a1ca.js.map": "/Roda-Front/static/js/main.9fd3a1ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe95eeac.css",
+    "static/js/main.9fd3a1ca.js"
+  ]
+}
