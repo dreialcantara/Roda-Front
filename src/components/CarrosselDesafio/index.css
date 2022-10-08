@@ -1,0 +1,65 @@
+.carrosseldesafio {
+    width: 1110px;
+    height: 500px;
+}
+
+.h1home {
+    text-align: left;
+}
+
+.swiper-button-next {
+
+    position: absolute !important;
+    background-image: url(../../assets/img/arrownext.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    background-color: #F68E5F;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.swiper-button-prev {
+
+    position: absolute !important;
+    background-image: url(../../assets/img/arrowprev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    background-color: #F68E5F;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.swiper-button-prev::after {
+    display: none;
+
+
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-disabled {
+    display: none;
+}
+
+.swiper-pagination {
+
+
+    position: static !important;
+}
+
+.swiper-pagination-bullet {
+    margin-top: 15px !important;
+    background-color: #DCB4A2 !important;
+    width: 24px;
+    height: 24px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4F2925 !important;
+}

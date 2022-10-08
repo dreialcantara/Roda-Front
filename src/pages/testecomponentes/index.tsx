@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
+import CarrosselDesafio from "../../components/CarrosselDesafio";
 import CarrosselGrupos from "../../components/CarrosselGrupos";
 import CarrosselGruposRecomendados from "../../components/CarrosselGruposRecomendados";
 
@@ -9,7 +10,9 @@ function TesteComponentes() {
   return (
     <div>
       <NavHeader />
+
       <Container>
+        <CarrosselDesafio />
         <Row className="text-start">
           <CarrosselGrupos />
         </Row>

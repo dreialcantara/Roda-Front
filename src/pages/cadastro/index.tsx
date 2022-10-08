@@ -12,7 +12,7 @@ function Login() {
     <div>
       <NavHeaderLogin />
       <Container className="d-flex justify-content-center flex-wrap">
-        <img className="imglogin img-fluid" src={imglogin} alt="" />
+        <img className="imglogin img-fluid mt-4" src={imglogin} alt="" />
         <FormCadastro />
       </Container>
       <ul>

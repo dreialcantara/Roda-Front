@@ -1,0 +1,19 @@
+.titulocarddesafio {
+    font-size: 40px;
+    line-height: 46px;
+    text-align: left;
+}
+
+.mescarddesafio {
+    font-family: "Source Sans Pro" !important;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+}
+
+.saibamaiscarddesafio {
+    font-family: "Source Sans Pro" !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    border: none !important;
+    padding: 15px;
+}

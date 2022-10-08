@@ -55,7 +55,7 @@ function NavHeader() {
             <div className="px-2">
               {" "}
               <Nav.Link href="#pricing" className="">
-                <img src={fotoperfilicon} alt="" />
+                <img className="img-fluid" src={fotoperfilicon} alt="" />
               </Nav.Link>
             </div>
           </Nav>

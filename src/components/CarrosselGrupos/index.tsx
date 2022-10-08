@@ -9,7 +9,7 @@ import CardGrupos from "../CardGrupos";
 function CarrosselGrupos() {
   return (
     <div>
-      <h1 className="h1home text-dark mt-4">Seus Grupos</h1>
+      <h1 className="h1home text-dark mt-5 mb-3">Seus Grupos</h1>
       <Swiper
         loop={true}
         spaceBetween={10}

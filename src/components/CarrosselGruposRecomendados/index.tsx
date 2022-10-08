@@ -5,12 +5,15 @@ import "swiper/css";
 import "./index.css";
 import "react-multi-carousel/lib/styles.css";
 import CardGrupos from "../CardGrupos";
+import { Navigation } from "swiper";
 
 function CarrosselGruposRecomendados() {
   return (
     <div>
-      <h1 className="h1home text-dark mt-4 mb-4">Recomendados para você</h1>
+      <h1 className="h1home text-dark mt-5 mb-3">Recomendados para você</h1>
       <Swiper
+        modules={[Navigation]}
+        navigation={true}
         loop={true}
         spaceBetween={10}
         breakpoints={{
