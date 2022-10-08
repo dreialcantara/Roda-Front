@@ -13,11 +13,12 @@ const fotoperfilicon = require("../../assets/img/fotoperfilicon.png");
 
 function NavHeader() {
   return (
-    <Navbar sticky="top" className="">
+    <Navbar sticky="top" className=" p-1">
       <Container className=" ">
         <div>
-          <Navbar.Brand href="/">
-            <img src={logo} alt="" /> {""}Roda
+          <Navbar.Brand href="/" className="d-flex align-items-center">
+            <img src={logo} alt="" className="img-fluid " />
+            <div className="textologo">Roda</div>
           </Navbar.Brand>
         </div>
         <div className="w-25">
@@ -31,21 +32,32 @@ function NavHeader() {
             />
           </Form>
         </div>
-        <div>
+        <div className="">
           {" "}
-          <Nav className="">
-            <Nav.Link href="#home">
-              <img src={grupoicon} alt="" />
-            </Nav.Link>
-            <Nav.Link href="#features">
-              <img src={chaticon} alt="" />
-            </Nav.Link>
-            <Nav.Link href="#pricing">
-              <img src={notificationicon} alt="" />
-            </Nav.Link>
-            <Nav.Link href="#pricing">
-              <img src={fotoperfilicon} alt="" />
-            </Nav.Link>
+          <Nav className="align-items-center justify-content-between">
+            <div className="px-2">
+              <Nav.Link href="#home">
+                <img src={grupoicon} alt="" />
+              </Nav.Link>
+            </div>
+            <div className="px-2">
+              {" "}
+              <Nav.Link href="#features">
+                <img src={chaticon} alt="" />
+              </Nav.Link>
+            </div>
+            <div className="px-2">
+              {" "}
+              <Nav.Link href="#pricing">
+                <img src={notificationicon} alt="" />
+              </Nav.Link>
+            </div>
+            <div className="px-2">
+              {" "}
+              <Nav.Link href="#pricing" className="">
+                <img src={fotoperfilicon} alt="" />
+              </Nav.Link>
+            </div>
           </Nav>
         </div>
       </Container>

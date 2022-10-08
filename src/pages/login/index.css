@@ -7,10 +7,10 @@
 ul {
     list-style: none !important;
     display: flex;
-    margin-right: 12vw;
+    margin-right: 14vw;
     margin-top: -6vh;
     display: flex;
-    justify-content: end;
+    justify-content: start;
 }
 
 li {

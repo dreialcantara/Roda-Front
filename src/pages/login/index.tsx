@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import FormLogin from "../../components/FormLogin";
-import NavHeader from "../../components/NavHeader";
+import NavHeaderLogin from "../../components/NavHeaderLogin";
 
 import "./index.css";
 
@@ -10,7 +10,7 @@ const imglogin = require("../../assets/img/imagelogin.png");
 function Login() {
   return (
     <div>
-      <NavHeader />
+      <NavHeaderLogin />
       <Container className="d-flex justify-content-center flex-wrap ">
         <img className="imglogin img-fluid" src={imglogin} alt="" />
         <FormLogin />

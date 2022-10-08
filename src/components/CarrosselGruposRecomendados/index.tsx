@@ -6,10 +6,10 @@ import "./index.css";
 import "react-multi-carousel/lib/styles.css";
 import CardGrupos from "../CardGrupos";
 
-function CarrosselGrupos() {
+function CarrosselGruposRecomendados() {
   return (
     <div>
-      <h1 className="h1home text-dark mt-4">Seus Grupos</h1>
+      <h1 className="h1home text-dark mt-4 mb-4">Recomendados para você</h1>
       <Swiper
         loop={true}
         spaceBetween={10}
@@ -58,4 +58,4 @@ function CarrosselGrupos() {
     </div>
   );
 }
-export default CarrosselGrupos;
+export default CarrosselGruposRecomendados;

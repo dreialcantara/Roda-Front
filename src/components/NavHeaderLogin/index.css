@@ -15,6 +15,7 @@
     font-family: 'Libre Baskerville';
     font-weight: 700;
     font-size: 29px;
+    line-height: 14px;
 
 }
 
@@ -24,7 +25,11 @@
 
 .navbar-nav a {
     color: white;
+    font-size: 12px;
+
 }
+
+
 
 .navbar a:hover {
     color: white;
@@ -47,6 +52,4 @@
     justify-content: space-between;
 }
 
-.nav-link {
-    margin-left: 0;
-}
+.nav-link a {}
