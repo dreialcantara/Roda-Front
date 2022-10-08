@@ -7,8 +7,8 @@
 ul {
     list-style: none !important;
     display: flex;
-    margin-right: 14vw;
-    margin-top: -6vh;
+    margin-right: 15vw !important;
+    margin-top: 0vh !important;
     display: flex;
     justify-content: start;
 }

@@ -14,7 +14,7 @@ import CardDesafios from "../CardDesafios";
 
 export default function CarrosselDesafio() {
   return (
-    <div className="carrosseldesafio mt-5 mb-5 w-100 ">
+    <div className="carrosseldesafio mt-5 w-100 ">
       <h1 className="h1home text-dark ">Desafios do Mês</h1>
       <Swiper
         pagination={{

@@ -10,7 +10,7 @@ import TesteComponentes from "./pages/testecomponentes";
 
 export default function Routes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <WrapperRoutes>
         <Route path="/teste" element={<TesteComponentes />} />
         <Route path="/" element={<Login />} />
