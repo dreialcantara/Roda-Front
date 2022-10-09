@@ -89,7 +89,7 @@ hr {
     margin-top: 25vh;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .containerform {
 
         margin-top: 5vh;
@@ -101,7 +101,7 @@ hr {
 
         margin-top: 25vh;
     }
-}
+}  */
 
 .passeye {
     margin-top: 1.7%;

@@ -13,7 +13,7 @@ function CardDesafios() {
           <div className="mt-4 mb-0 mescarddesafio">
             <Card.Title>Desafio do mês | Outubro</Card.Title>
           </div>
-          <div className="mt-5 titulocarddesafio w-75 h-100">
+          <div className="   mt-5 titulocarddesafio w-75 h-100">
             <Card.Text>
               Uma das vozes mais originais da ficção contemporânea
             </Card.Text>
