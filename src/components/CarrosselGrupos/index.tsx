@@ -33,26 +33,23 @@ function CarrosselGrupos() {
         }}
       >
         <SwiperSlide>
-          <CardGrupos />
+          <CardGrupos name="exemplo1" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <CardGrupos />
+          <CardGrupos name="exemplo2" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardGrupos />
+          <CardGrupos name="exemplo3" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardGrupos />
+          <CardGrupos name="exemplo4" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardGrupos />
+          <CardGrupos name="exemplo5" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardGrupos />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardGrupos />
+          <CardGrupos name="exemplo6" />
         </SwiperSlide>
       </Swiper>
     </div>

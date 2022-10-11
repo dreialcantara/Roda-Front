@@ -6,7 +6,11 @@ import "./index.css";
 const livroicon = require("../../assets/img/livroicon.png");
 const membrosicon = require("../../assets/img/membrosicon.png");
 
-function CardGrupos() {
+type CarrosselGruposType = {
+  name: string;
+};
+
+function CardGrupos(props: CarrosselGruposType) {
   return (
     <Card
       className="cardgrupos rounded-5"
@@ -15,7 +19,7 @@ function CardGrupos() {
     >
       <Row className="mt-4 gx-0 ">
         <Col className="text-left headercardgrupos" md={6} xs={7}>
-          <div className="titulocardgrupo">Nome do Grupo</div>
+          <div className="titulocardgrupo">{props.name}</div>
           <div className="labelgrupo rounded-5 d-flex justify-content-center">
             LABEL
           </div>
