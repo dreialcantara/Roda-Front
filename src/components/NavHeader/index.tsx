@@ -16,7 +16,7 @@ function NavHeader() {
     <Navbar sticky="top" className=" p-1">
       <Container className=" ">
         <div>
-          <Navbar.Brand href="/teste" className="d-flex align-items-center">
+          <Navbar.Brand href="/feed" className="d-flex align-items-center">
             <img src={logo} alt="" className="img-fluid " />
             <div className="textologo">Roda</div>
           </Navbar.Brand>

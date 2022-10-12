@@ -7,12 +7,14 @@ import Login from "./pages/login";
 import Cadastro from "./pages/cadastro";
 import AllUsers from "./pages/allusers";
 import TesteComponentes from "./pages/testecomponentes";
+import Feed from "./pages/feed";
 
 export default function Routes() {
-  return (// <BrowserRouter basename={process.env.PUBLIC_URL}>
+  return (
+    // <BrowserRouter basename={process.env.PUBLIC_URL}>
     <BrowserRouter>
-    
       <WrapperRoutes>
+        <Route path="/feed" element={<Feed />} />
         <Route path="/teste" element={<TesteComponentes />} />
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
