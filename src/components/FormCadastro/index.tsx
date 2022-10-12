@@ -13,6 +13,7 @@ function FormCadastro() {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+  const [imgurl, setimgurl] = useState<string>("");
   const [confPassword, setConfPassword] = useState<string>("");
   const [showErrorMessage, setShowErrorMessage] = useState(false);
   const [cPasswordClass, setCPasswordClass] = useState("form-control");
@@ -46,6 +47,7 @@ function FormCadastro() {
       name,
       email,
       password,
+      imgurl,
     };
 
     const notify = () =>
@@ -116,13 +118,28 @@ function FormCadastro() {
           className="mb-3 d-flex flex-column"
           controlId="formBasicEmail"
         >
-          <Form.Label>Nome de usuário</Form.Label>
+          <Form.Label>Nome</Form.Label>
           <Form.Control
             type="text"
             placeholder="Seu nome"
             value={name}
             onChange={(event) => {
               setName(event.target.value);
+            }}
+          />
+        </Form.Group>
+
+        <Form.Group
+          className="mb-3 d-flex flex-column"
+          controlId="formBasicEmail"
+        >
+          <Form.Label>Link da foto de Perfil</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="link para foto"
+            value={imgurl}
+            onChange={(event) => {
+              setimgurl(event.target.value);
             }}
           />
         </Form.Group>
