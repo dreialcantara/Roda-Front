@@ -1,4 +1,4 @@
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast, Slide } from "react-toastify";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useDispatch } from "react-redux";
@@ -74,6 +74,7 @@ function FormLogin() {
   return (
     <div>
       <ToastContainer
+        transition={Slide}
         position="top-center"
         autoClose={5000}
         hideProgressBar={false}

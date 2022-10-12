@@ -57,3 +57,16 @@
     height: 50px !important;
 
 }
+
+
+
+@media (max-width: 1000px) {
+    .navbar-nav {
+
+        display: none;
+    }
+
+    .formpesquisa {
+        display: none;
+    }
+}

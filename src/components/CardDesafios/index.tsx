@@ -1,3 +1,4 @@
+import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 
 import "./index.css";
@@ -13,15 +14,15 @@ function CardDesafios() {
           <div className="mt-4 mb-0 mescarddesafio">
             <Card.Title>Desafio do mês | Outubro</Card.Title>
           </div>
-          <div className="   mt-5 titulocarddesafio w-75 h-100">
+          <div className="mt-5 titulocarddesafio w-75 h-100">
             <Card.Text>
               Uma das vozes mais originais da ficção contemporânea
             </Card.Text>
           </div>
           <a href="/">
-            <p className="saibamaiscarddesafio mt-auto mb-5 bg-white rounded-4 align-items-center text-dark">
+            <Button className="saibamaiscarddesafio mt-auto mb-5 bg-white rounded-4 align-items-center text-dark">
               Saiba Mais
-            </p>
+            </Button>
           </a>
         </div>
       </Card.ImgOverlay>

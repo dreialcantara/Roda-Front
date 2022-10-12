@@ -7,7 +7,7 @@ import { cadastroUsuario } from "../../services/MainApi/cadastro";
 import { Link } from "react-router-dom";
 
 import "./index.css";
-import { toast, ToastContainer } from "react-toastify";
+import { Slide, toast, ToastContainer } from "react-toastify";
 
 function FormCadastro() {
   const [name, setName] = useState<string>("");
@@ -91,7 +91,7 @@ function FormCadastro() {
 
   return (
     <div className="containerformcadastro d-flex align-items-center justify-content-center">
-      <ToastContainer />
+      <ToastContainer transition={Slide} />
       <Form className="w-75" onSubmit={cadastro}>
         <div className="container">
           <h1>Junte-se a Roda!</h1>

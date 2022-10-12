@@ -12,7 +12,7 @@ function CarrosselGrupos() {
   const user = useSelector((store: RootStore) => store);
 
   return (
-    <div>
+    <div className="">
       <h1 className="h1home text-dark mt-5 mb-3">Seus Grupos</h1>
       <Swiper
         loop={true}

@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "./index.css";
 
 // import required modules
-import { Navigation, Pagination } from "swiper";
+import { EffectFade, Navigation, Pagination, Autoplay } from "swiper";
 import CardDesafios from "../CardDesafios";
 
 export default function CarrosselDesafio() {
@@ -21,8 +21,12 @@ export default function CarrosselDesafio() {
           clickable: true,
         }}
         navigation={true}
-        modules={[Navigation, Pagination]}
+        modules={[EffectFade, Autoplay, Navigation, Pagination]}
         className="mySwiper mt-3 position-relative"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
       >
         <SwiperSlide>
           <CardDesafios />

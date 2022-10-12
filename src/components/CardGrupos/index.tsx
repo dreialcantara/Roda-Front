@@ -29,7 +29,7 @@ function CardGrupos(props: CarrosselGruposType) {
           md={4}
           xs={3}
         >
-          Próximo encontro
+          <div className="date-gcard-txt">Próximo encontro</div>
         </Col>
         <Col
           className="encontrocard bg-danger d-flex justify-content-center align-items-center"

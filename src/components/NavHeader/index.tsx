@@ -25,7 +25,7 @@ function NavHeader() {
         </div>
         <div className="w-25">
           {" "}
-          <Form className="text-center">
+          <Form className="formpesquisa text-center">
             <Form.Control
               type="search"
               placeholder="         Pesquisar livros, grupos e usuários"

@@ -60,3 +60,9 @@
 .swiper-pagination-bullet-active {
     background-color: #4F2925 !important;
 }
+
+@media (max-width: 1000px) {
+    .carrosseldesafio {
+        display: none;
+    }
+}
