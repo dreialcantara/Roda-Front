@@ -2,16 +2,18 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
-
+import { useSelector } from "react-redux";
+import { RootStore } from "../../store";
 import "./index.css";
 
 const logo = require("../../assets/img/Logo.png");
 const grupoicon = require("../../assets/img/grupoicon.png");
 const chaticon = require("../../assets/img//chaticon.png");
 const notificationicon = require("../../assets/img/notificationicon.png");
-const fotoperfilicon = require("../../assets/img/fotoperfilicon.png");
 
 function NavHeader() {
+  const user = useSelector((store: RootStore) => store);
+
   return (
     <Navbar sticky="top" className=" p-1">
       <Container className=" ">
@@ -55,7 +57,11 @@ function NavHeader() {
             <div className="px-2">
               {" "}
               <Nav.Link href="#pricing" className="">
-                <img className="img-fluid" src={fotoperfilicon} alt="" />
+                <img
+                  className="fotoheader rounded-5 w-25 img-fluid"
+                  src={user.imgurl}
+                  alt=""
+                />
               </Nav.Link>
             </div>
           </Nav>

@@ -89,7 +89,7 @@ hr {
     margin-top: 0vh;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .containerformcadastro {
 
         margin-top: 5vh;
@@ -101,7 +101,7 @@ hr {
 
         margin-top: 20vh;
     }
-}
+} */
 
 .passeye {
     margin-top: 1.7%;

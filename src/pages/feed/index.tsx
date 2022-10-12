@@ -6,7 +6,7 @@ import CarrosselGruposRecomendados from "../../components/CarrosselGruposRecomen
 
 import NavHeader from "../../components/NavHeader";
 
-function TesteComponentes() {
+function Feed() {
   return (
     <div>
       <NavHeader />
@@ -24,4 +24,4 @@ function TesteComponentes() {
   );
 }
 
-export default TesteComponentes;
+export default Feed;

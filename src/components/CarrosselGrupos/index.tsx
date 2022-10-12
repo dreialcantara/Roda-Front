@@ -37,7 +37,7 @@ function CarrosselGrupos() {
         }}
       >
         <SwiperSlide>
-          <CardGrupos name={user.email as string} />
+          <CardGrupos name={user.name as string} />
         </SwiperSlide>
 
         <SwiperSlide>

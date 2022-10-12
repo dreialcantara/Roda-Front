@@ -7,6 +7,7 @@ import { cadastroUsuario } from "../../services/MainApi/cadastro";
 import { Link } from "react-router-dom";
 
 import "./index.css";
+import { toast, ToastContainer } from "react-toastify";
 
 function FormCadastro() {
   const [name, setName] = useState<string>("");
@@ -47,21 +48,50 @@ function FormCadastro() {
       password,
     };
 
+    const notify = () =>
+      toast.error("Houve um erro no seu cadastro", {
+        position: "top-center",
+        autoClose: false,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+
+    const notifySuccess = () =>
+      toast.success("Cadastro criado com sucesso!", {
+        position: "top-center",
+        autoClose: false,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+
+    const redirect = () => (window.location.pathname = "/");
+
     try {
       const response = await cadastroUsuario(payload);
       if (response.status !== 201) {
-        return alert("Algo deu errado");
+        notify();
       } else {
         console.log(response);
+        notifySuccess();
+        setTimeout(redirect, 2500);
       }
     } catch (error) {
-      alert("Algo deu errado");
+      notify();
       console.log(error);
     }
   };
 
   return (
     <div className="containerformcadastro d-flex align-items-center justify-content-center">
+      <ToastContainer />
       <Form className="w-75" onSubmit={cadastro}>
         <div className="container">
           <h1>Junte-se a Roda!</h1>

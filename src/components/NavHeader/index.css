@@ -50,3 +50,10 @@
 .nav-link {
     margin-left: 0;
 }
+
+.fotoheader {
+    border: white solid 1px;
+    width: 50px !important;
+    height: 50px !important;
+
+}
