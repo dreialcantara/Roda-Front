@@ -33,11 +33,15 @@ function FormLogin() {
         console.log(response.data);
         dispatch(
           setUser({
+            iduser: response.data.user.iduser,
+            name: response.data.user.name,
+            bio: response.data.user.bio,
+            imgurl: response.data.user.imgurl,
             token: response.data.token,
             email,
           })
         );
-        window.location.pathname = "/teste";
+        // window.location.pathname = "/teste";
 
         // localStorage.setItem("token", response.data.token);
         // window.location.pathname = "/allusers";

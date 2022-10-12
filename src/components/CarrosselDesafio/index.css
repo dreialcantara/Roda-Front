@@ -1,8 +1,7 @@
-
-
 .h1home {
     text-align: left;
 }
+
 
 .swiper-button-next {
 
@@ -15,6 +14,7 @@
     width: 60px;
     height: 60px;
     border-radius: 100%;
+    z-index: 5;
 }
 
 .swiper-button-prev {
