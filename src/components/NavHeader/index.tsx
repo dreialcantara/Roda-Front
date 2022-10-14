@@ -4,7 +4,10 @@ import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import { useSelector } from "react-redux";
 import { RootStore } from "../../store";
+import Dropdown from "react-bootstrap/Dropdown";
+
 import "./index.css";
+import { NavDropdown } from "react-bootstrap";
 
 const logo = require("../../assets/img/Logo.png");
 const grupoicon = require("../../assets/img/grupoicon.png");
@@ -56,12 +59,32 @@ function NavHeader() {
             </div>
             <div className="px-2">
               {" "}
-              <Nav.Link href="#pricing" className="">
-                <img
-                  className="fotoheader rounded-5 w-25 img-fluid"
-                  src={user.imgurl}
-                  alt=""
-                />
+              <Nav.Link>
+                <NavDropdown
+                  title={
+                    <img
+                      className="dropdown-toggle fotoheader rounded-5 w-25 img-fluid"
+                      src={user.imgurl}
+                      alt=""
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    />
+                  }
+                  id="basic-nav-dropdown"
+                >
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Another action
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    Something
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">
+                    Separated link
+                  </NavDropdown.Item>
+                </NavDropdown>
               </Nav.Link>
             </div>
           </Nav>

@@ -36,23 +36,23 @@ function CarrosselGruposRecomendados() {
         }}
       >
         <SwiperSlide>
-          <CardGrupos name="exemplo1" />
+          <CardGrupos name="exemplo1" books="exemblobook" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <CardGrupos name="exemplo2" />
+          <CardGrupos name="exemplo1" books="exemblobook" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardGrupos name="exemplo3" />
+          <CardGrupos name="exemplo1" books="exemblobook" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardGrupos name="exemplo4" />
+          <CardGrupos name="exemplo1" books="exemblobook" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardGrupos name="exemplo5" />
+          <CardGrupos name="exemplo1" books="exemblobook" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardGrupos name="exemplo6" />
+          <CardGrupos name="exemplo1" books="exemblobook" />
         </SwiperSlide>
       </Swiper>
     </div>

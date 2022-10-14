@@ -8,6 +8,7 @@ const membrosicon = require("../../assets/img/membrosicon.png");
 
 type CarrosselGruposType = {
   name: string;
+  books: string;
 };
 
 function CardGrupos(props: CarrosselGruposType) {
@@ -42,7 +43,8 @@ function CardGrupos(props: CarrosselGruposType) {
       <Card.Body>
         <Row className="footercardgrupo mt-5">
           <Card.Text>
-            <img src={livroicon} alt="" /> Livro (Capítulo #)
+            <img src={livroicon} alt="" />
+            {props.books}
           </Card.Text>
         </Row>
         <Row className="footercardgrupo2">

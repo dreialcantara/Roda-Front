@@ -70,3 +70,7 @@
         display: none;
     }
 }
+
+.nav-link {
+    padding: 0;
+}

@@ -5,57 +5,70 @@ import "swiper/css";
 import "./index.css";
 import "react-multi-carousel/lib/styles.css";
 import CardGrupos from "../CardGrupos";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { RootStore } from "../../store";
+import { ListarGrupos } from "../../services/MainApi/listargrupos";
+import { useState, useEffect } from "react";
 
 function CarrosselGrupos() {
+  type gruposType = {
+    name: string;
+    books: string;
+  };
+
   const user = useSelector((store: RootStore) => store);
+  const [grupos, setGrupos] = useState(Array<gruposType>);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await ListarGrupos(user.token);
+
+      setGrupos(response.data);
+
+      console.log(grupos);
+    };
+    fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="">
       <h1 className="h1home text-dark mt-5 mb-3">Seus Grupos</h1>
-      <Swiper
-        loop={true}
-        spaceBetween={10}
-        breakpoints={{
-          0: {
-            width: 0,
-            slidesPerView: 1,
-          },
-          450: {
-            width: 450,
-            slidesPerView: 1,
-          },
-          900: {
-            width: 768,
-            slidesPerView: 2,
-          },
-          1200: {
-            width: 1200,
-            slidesPerView: 3,
-          },
-        }}
-      >
-        <SwiperSlide>
-          <CardGrupos name={user.name as string} />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CardGrupos name="exemplo2" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardGrupos name="exemplo3" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardGrupos name="exemplo4" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardGrupos name="exemplo5" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardGrupos name="exemplo6" />
-        </SwiperSlide>
-      </Swiper>
+      {grupos.length > 0 ? (
+        <Swiper
+          loop={true}
+          spaceBetween={10}
+          breakpoints={{
+            0: {
+              width: 0,
+              slidesPerView: 1,
+            },
+            450: {
+              width: 450,
+              slidesPerView: 1,
+            },
+            900: {
+              width: 768,
+              slidesPerView: 2,
+            },
+            1200: {
+              width: 1200,
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {grupos.map((grupos) => (
+            <SwiperSlide>
+              <CardGrupos
+                name={grupos.name as string}
+                books={grupos.books as string}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : (
+        <h2>Sem Grupos</h2>
+      )}
     </div>
   );
 }
