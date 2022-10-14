@@ -9,7 +9,7 @@ import { Button } from "react-bootstrap";
 function CarrosselPropostas() {
   return (
     <div className="w-100">
-      <Button className="titulo rounded-5">Propostas recebidas</Button>
+      {/* <Button className="titulo rounded-5">Propostas recebidas</Button> */}
       <div className=" mt-5 w-75 border container pt-5 pb-4 p-0 rounded-5">
         <Swiper
           spaceBetween={0}
