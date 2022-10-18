@@ -5,8 +5,8 @@
 
     padding-left: 3vw;
     padding-right: 3vw;
-    padding-top: 2.9vh;
-    padding-bottom: 2.9vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     font-size: 12px;
     font-weight: 700 !important;
 
@@ -28,8 +28,8 @@
 
     padding-left: 3vw;
     padding-right: 3vw;
-    padding-top: 2.9vh;
-    padding-bottom: 2.9vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     font-size: 12px;
     position: absolute;
     font-weight: 700 !important;
@@ -127,7 +127,7 @@ hr {
     color: #586BA4;
 }
 
-.container {
+.containercadastro {
     text-align: center;
     font-family: "Roboto";
     color: #324376;
@@ -154,11 +154,5 @@ hr {
 
 .botaocontainer {
     margin-top: 5vh;
-    margin-left: -10vw;
-}
 
-@media (max-width: 1200px) {
-    .botaocontainer {
-        margin-left: -18vw;
-    }
 }

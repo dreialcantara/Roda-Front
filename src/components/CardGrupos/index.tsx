@@ -1,33 +1,23 @@
 import { Col, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import {format, formatDistanceToNow, parse, parseISO} from 'date-fns'
-
+import { format, formatDistanceToNow, parse, parseISO } from "date-fns";
 
 import "./index.css";
-import { useEffect } from "react";
 
 const livroicon = require("../../assets/img/livroicon.png");
 const membrosicon = require("../../assets/img/membrosicon.png");
-const gbLocale = require("date-fns/locale/en-GB");
 
 type CarrosselGruposType = {
   name: string;
   books: string;
   key?: number;
-  updated_at : string;
+  updated_at: string;
 };
-
-
 
 function CardGrupos(props: CarrosselGruposType) {
   const dateformat = new Date(props.updated_at).toLocaleDateString("en-GB");
 
- // const datedif = formatDistanceToNow(dateformat);
-
-
-
-
-
+  // const datedif = formatDistanceToNow(dateformat);
 
   return (
     <Card
@@ -36,7 +26,8 @@ function CardGrupos(props: CarrosselGruposType) {
       style={{ width: "100%", height: "12rem" }}
     >
       <Row className="mt-4 gx-0 ">
-        <Col className="text-left headercardgrupos" md={6} xs={7}>
+        {/* retirar  w-100 da Col abaixo quando tornar o card de próximo encontro novamente ativo*/}
+        <Col className="w-100 text-left headercardgrupos" md={6} xs={7}>
           <div className="titulocardgrupo">{props.name}</div>
           <div className="labelgrupo rounded-5 d-flex justify-content-center">
             LABEL

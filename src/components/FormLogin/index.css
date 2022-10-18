@@ -127,7 +127,7 @@ hr {
     color: #586BA4;
 }
 
-.container {
+.containercadastro {
     text-align: center;
     font-family: "Roboto";
     color: #324376;
@@ -154,11 +154,20 @@ hr {
 
 .botaocontainer {
     margin-top: 5vh;
-    margin-left: -10vw;
+    margin-left: 1vw;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 550px) {
     .botaocontainer {
-        margin-left: -18vw;
+        margin-left: 13vw;
+    }
+}
+
+;
+
+
+@media (max-width: 900px) {
+    .botaocontainer {
+        margin-left: 0vw;
     }
 }

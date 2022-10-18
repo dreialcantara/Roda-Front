@@ -1,17 +1,18 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import CardPerfil from "../../components/CardPerfil";
-import { CardPost } from "../../components/CardPost";
 import CarrosselPropostas from "../../components/CarrosselPropostas";
 
 import NavHeader from "../../components/NavHeader";
 
-function teste() {
+function perfil() {
   return (
     <div>
-      <CardPost />
+      <NavHeader />
+      <CardPerfil />
+      <CarrosselPropostas />
     </div>
   );
 }
 
-export default teste;
+export default perfil;

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
+import { CardPost } from "../../components/CardPost";
 import CarrosselDesafio from "../../components/CarrosselDesafio";
 import CarrosselGrupos from "../../components/CarrosselGrupos";
 import CarrosselGruposRecomendados from "../../components/CarrosselGruposRecomendados";
@@ -19,6 +20,7 @@ function Feed() {
         <Row className="text-start">
           <CarrosselGruposRecomendados />
         </Row>
+        <Row></Row>
       </Container>
     </div>
   );

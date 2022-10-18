@@ -95,7 +95,7 @@ function FormCadastro() {
     <div className="containerformcadastro d-flex align-items-center justify-content-center">
       <ToastContainer transition={Slide} />
       <Form className="w-75" onSubmit={cadastro}>
-        <div className="container">
+        <div className="containercadastro">
           <h1>Junte-se a Roda!</h1>
           <hr className="w-50"></hr>
           <h5>Converse agora com pessoas que estão lendo o mesmo que você!</h5>

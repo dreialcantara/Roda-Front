@@ -23,11 +23,13 @@ function FormLogin() {
 
   const passeye = require("../../assets/img/passeye.png");
 
-  function logintimeout() {setTimeout(() => {window.location.pathname="/feed";
-   
-  setLoading(false);}, 4000)};
-    
- 
+  function logintimeout() {
+    setTimeout(() => {
+      window.location.pathname = "/feed";
+
+      setLoading(false);
+    }, 4000);
+  }
 
   const login = async (event: FormEvent) => {
     event.preventDefault();
@@ -67,21 +69,17 @@ function FormLogin() {
           })
         );
 
-       
-        
-        
         logintimeout();
         // localStorage.setItem("token", response.data.token);
         // window.location.pathname = "/allusers";
       }
     } catch (error) {
-      setLoading(false);  
+      setLoading(false);
       notify();
     }
   };
 
   return (
-   
     <div>
       <ToastContainer
         transition={Slide}
@@ -97,76 +95,75 @@ function FormLogin() {
         theme="light"
       />
 
-      
-        <div className="containerform d-flex align-items-center justify-content-center">
-          <Form className="w-75" onSubmit={login}>
-            <div className="container">
-              <h1>Entre na Roda!</h1>
-              <hr className="w-50"></hr>
-              <h5>
-                Converse agora com pessoas que estão lendo o mesmo que você!
-              </h5>
+      <div className="containerform d-flex align-items-center justify-content-center">
+        <Form className="w-75" onSubmit={login}>
+          <div className="containercadastro">
+            <h1>Entre na Roda!</h1>
+            <hr className="w-50"></hr>
+            <h5>
+              Converse agora com pessoas que estão lendo o mesmo que você!
+            </h5>
+          </div>
+          <Form.Group
+            className="mb-3 d-flex flex-column"
+            controlId="formBasicEmail"
+          >
+            <Form.Label className="form-label mb-0 ">E-mail</Form.Label>
+            <Form.Control
+              type="email"
+              placeholder="email@email.com"
+              value={email}
+              onChange={(event) => {
+                setEmail(event.target.value);
+              }}
+            />
+          </Form.Group>
+
+          <Form.Group
+            className="mb-3 d-flex flex-column"
+            controlId="formBasicPassword"
+          >
+            <Form.Label className=" mb-0">Senha</Form.Label>
+            <Form.Control
+              type={hidePass}
+              placeholder="Senha#123"
+              value={password}
+              onChange={(event) => {
+                setPassword(event.target.value);
+              }}
+            />{" "}
+            <img
+              className="passeye"
+              src={passeye}
+              alt=""
+              onClick={() => {
+                if (hidePass === "password") {
+                  setHidePass("text");
+                } else {
+                  setHidePass("password");
+                }
+              }}
+            />
+          </Form.Group>
+          {loading ? (
+            <Loading />
+          ) : (
+            <div className="botaocontainer">
+              <Link
+                className="botao-criar rounded-5 btn btn-primary"
+                role="button"
+                to="/cadastro"
+              >
+                Criar conta
+              </Link>
+
+              <Button className="botao-login rounded-5" type="submit">
+                Fazer Login
+              </Button>
             </div>
-            <Form.Group
-              className="mb-3 d-flex flex-column"
-              controlId="formBasicEmail"
-            >
-              <Form.Label className="form-label mb-0 ">E-mail</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="email@email.com"
-                value={email}
-                onChange={(event) => {
-                  setEmail(event.target.value);
-                }}
-              />
-            </Form.Group>
-
-            <Form.Group
-              className="mb-3 d-flex flex-column"
-              controlId="formBasicPassword"
-            >
-              <Form.Label className=" mb-0">Senha</Form.Label>
-              <Form.Control
-                type={hidePass}
-                placeholder="Senha#123"
-                value={password}
-                onChange={(event) => {
-                  setPassword(event.target.value);
-                }}
-              />{" "}
-              <img
-                className="passeye"
-                src={passeye}
-                alt=""
-                onClick={() => {
-                  if (hidePass === "password") {
-                    setHidePass("text");
-                  } else {
-                    setHidePass("password");
-                  }
-                }}
-              />
-            </Form.Group>
-            {loading ? (
-        <Loading />
-      ) : (<div className="botaocontainer">
-      <Link
-        className="botao-criar rounded-5 btn btn-primary"
-        role="button"
-        to="/cadastro"
-      >
-        Criar conta
-      </Link>
-
-      <Button className="botao-login rounded-5" type="submit">
-        Fazer Login
-      </Button>
-    </div>)}
-            
-          </Form>
-        </div>
-      
+          )}
+        </Form>
+      </div>
     </div>
   );
 }

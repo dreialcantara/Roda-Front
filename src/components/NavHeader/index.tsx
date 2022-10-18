@@ -7,7 +7,6 @@ import { RootStore } from "../../store";
 import Dropdown from "react-bootstrap/Dropdown";
 import { removeUser } from "../../store/modules/user";
 
-
 import "./index.css";
 import { NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -22,17 +21,20 @@ function NavHeader() {
   const user = useSelector((store: RootStore) => store);
   const dispatch = useDispatch();
 
-  function logintimeout() {setTimeout(() => {window.location.pathname="/"}, 2000)};
+  function logintimeout() {
+    setTimeout(() => {
+      window.location.pathname = "/";
+    }, 2000);
+  }
 
   const sair = async (event: any) => {
     dispatch(removeUser());
     logintimeout();
-
-    
-    
   };
 
-  function pageperfil() {window.location.pathname="/teste"};
+  function pageperfil() {
+    window.location.pathname = "/perfil";
+  }
 
   return (
     <Navbar sticky="top" className=" p-1">
@@ -73,36 +75,30 @@ function NavHeader() {
               <Nav.Link href="#">
                 <img src={notificationicon} alt="" />
               </Nav.Link>
-            </div>
-            
-              {" "}
-              <Nav.Link>
-                <NavDropdown  
+            </div>{" "}
+            <Nav.Link>
+              <NavDropdown
                 align="end"
-                  title={
-                    <img
-                      className="dropdown-toggle fotoheader rounded-5 w-25 img-fluid"
-                      src={user.imgurl}
-                      alt=""
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    />
-                  }
-                  id="basic-nav-dropdown"
-                >
-                  <NavDropdown.Item onClick={pageperfil}>Perfil</NavDropdown.Item>
-                  <NavDropdown.Item  href="#">
-                  Configurações
-                  </NavDropdown.Item>
-                  <NavDropdown.Item  onClick={sair}>
-                    <img  className="mx-2" src={sairvetor} alt="" />
-                    Sair
-                  </NavDropdown.Item>
-                 
-                </NavDropdown>
-              </Nav.Link>
-            
+                title={
+                  <img
+                    className="dropdown-toggle fotoheader rounded-5 w-25 img-fluid"
+                    src={user.imgurl}
+                    alt=""
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  />
+                }
+                id="basic-nav-dropdown"
+              >
+                <NavDropdown.Item onClick={pageperfil}>Perfil</NavDropdown.Item>
+                <NavDropdown.Item href="#">Configurações</NavDropdown.Item>
+                <NavDropdown.Item onClick={sair}>
+                  <img className="mx-2" src={sairvetor} alt="" />
+                  Sair
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav.Link>
           </Nav>
         </div>
       </Container>
