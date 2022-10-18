@@ -19,11 +19,12 @@
 }
 
 .textologo {
-    margin-left: 10px
+    margin-left: 10px;
+    color: white ;
 }
 
 .navbar-nav a {
-    color: white;
+    color: white ;
 }
 
 .navbar a:hover {
@@ -73,4 +74,31 @@
 
 .nav-link {
     padding: 0;
+}
+
+.dropdown-menu{
+    margin-top: 40px !important;
+    background-color: #F3F3F3;
+    border: none;
+    padding: 0;
+    border-radius: 15px 15px 15px 15px;
+    width: 252px;
+ 
+}
+.dropdown-item{
+padding: 16px 109px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400 !important;
+font-size: 16px !important;
+line-height: 20px;
+color: #000000 !important;
+text-align: center;
+padding: 10%;
+}
+
+.dropdown-item:hover{
+   background-color:  #324376;
+   color: #D9D9D9 !important;
+   border-radius: 15px 15px 
 }

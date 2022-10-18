@@ -1,7 +1,10 @@
 import { Col, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import {format, formatDistanceToNow, parse, parseISO} from 'date-fns'
+
 
 import "./index.css";
+import { useEffect } from "react";
 
 const livroicon = require("../../assets/img/livroicon.png");
 const membrosicon = require("../../assets/img/membrosicon.png");
@@ -9,9 +12,23 @@ const membrosicon = require("../../assets/img/membrosicon.png");
 type CarrosselGruposType = {
   name: string;
   books: string;
+  key?: number;
+  updated_at : string;
 };
 
+
+
 function CardGrupos(props: CarrosselGruposType) {
+  const dateformat = new Date(props.updated_at);
+  
+
+ // const datedif = formatDistanceToNow(dateformat);
+
+
+
+
+
+
   return (
     <Card
       className="cardgrupos rounded-5"
@@ -53,7 +70,7 @@ function CardGrupos(props: CarrosselGruposType) {
               <img src={membrosicon} alt="" /> # membros
             </Card.Text>
           </Col>
-          <Col>última atividade há x dias atrás</Col>
+          <Col>última atividade há {"x"} dias atrás</Col>
         </Row>
       </Card.Body>
     </Card>

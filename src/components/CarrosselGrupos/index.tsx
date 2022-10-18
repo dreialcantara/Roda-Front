@@ -14,7 +14,13 @@ function CarrosselGrupos() {
   type gruposType = {
     name: string;
     books: string;
+    idgroup ?: number;
+    updated_at : string;
+    
   };
+
+  
+
 
   const user = useSelector((store: RootStore) => store);
   const [grupos, setGrupos] = useState(Array<gruposType>);
@@ -25,17 +31,20 @@ function CarrosselGrupos() {
 
       setGrupos(response.data);
 
-      console.log(grupos);
+      
     };
     fetchData();
+    console.log(grupos);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
 
   return (
     <div className="">
       <h1 className="h1home text-dark mt-5 mb-3">Seus Grupos</h1>
       {grupos.length > 0 ? (
-        <Swiper
+        <Swiper 
+        
           loop={true}
           spaceBetween={10}
           breakpoints={{
@@ -58,8 +67,9 @@ function CarrosselGrupos() {
           }}
         >
           {grupos.map((grupos) => (
-            <SwiperSlide>
+            <SwiperSlide key={grupos.idgroup}>
               <CardGrupos
+              updated_at={grupos.updated_at as string}
                 name={grupos.name as string}
                 books={grupos.books as string}
               />
@@ -67,7 +77,7 @@ function CarrosselGrupos() {
           ))}
         </Swiper>
       ) : (
-        <h2>Sem Grupos</h2>
+        <h1 className="w-100 h-100 text-center">Sem Gruposs</h1>
       )}
     </div>
   );

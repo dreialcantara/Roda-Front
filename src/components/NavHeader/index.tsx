@@ -2,20 +2,37 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { RootStore } from "../../store";
 import Dropdown from "react-bootstrap/Dropdown";
+import { removeUser } from "../../store/modules/user";
+
 
 import "./index.css";
 import { NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const logo = require("../../assets/img/Logo.png");
 const grupoicon = require("../../assets/img/grupoicon.png");
 const chaticon = require("../../assets/img//chaticon.png");
 const notificationicon = require("../../assets/img/notificationicon.png");
+const sairvetor = require("../../assets/img/sairvetor.png");
 
 function NavHeader() {
   const user = useSelector((store: RootStore) => store);
+  const dispatch = useDispatch();
+
+  function logintimeout() {setTimeout(() => {window.location.pathname="/"}, 2000)};
+
+  const sair = async (event: any) => {
+    dispatch(removeUser());
+    logintimeout();
+
+    
+    
+  };
+
+  function pageperfil() {window.location.pathname="/teste"};
 
   return (
     <Navbar sticky="top" className=" p-1">
@@ -41,26 +58,27 @@ function NavHeader() {
           {" "}
           <Nav className="align-items-center justify-content-between">
             <div className="px-2">
-              <Nav.Link href="#home">
+              <Nav.Link href="#">
                 <img src={grupoicon} alt="" />
               </Nav.Link>
             </div>
             <div className="px-2">
               {" "}
-              <Nav.Link href="#features">
+              <Nav.Link href="#">
                 <img src={chaticon} alt="" />
               </Nav.Link>
             </div>
             <div className="px-2">
               {" "}
-              <Nav.Link href="#pricing">
+              <Nav.Link href="#">
                 <img src={notificationicon} alt="" />
               </Nav.Link>
             </div>
-            <div className="px-2">
+            
               {" "}
               <Nav.Link>
-                <NavDropdown
+                <NavDropdown  
+                align="end"
                   title={
                     <img
                       className="dropdown-toggle fotoheader rounded-5 w-25 img-fluid"
@@ -73,20 +91,18 @@ function NavHeader() {
                   }
                   id="basic-nav-dropdown"
                 >
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
+                  <NavDropdown.Item onClick={pageperfil}>Perfil</NavDropdown.Item>
+                  <NavDropdown.Item  href="#">
+                  Configurações
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
+                  <NavDropdown.Item  onClick={sair}>
+                    <img  className="mx-2" src={sairvetor} alt="" />
+                    Sair
                   </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item>
+                 
                 </NavDropdown>
               </Nav.Link>
-            </div>
+            
           </Nav>
         </div>
       </Container>

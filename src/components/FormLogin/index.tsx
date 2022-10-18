@@ -1,7 +1,7 @@
 import { ToastContainer, toast, Slide } from "react-toastify";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "../../store/modules/user";
 import Loading from "../../components/Loading";
 
@@ -11,6 +11,7 @@ import { FormEvent, useState } from "react";
 import { loginUsuario } from "../../services/MainApi/login";
 import "./index.css";
 import { Link } from "react-router-dom";
+import { RootStore } from "../../store";
 
 function FormLogin() {
   const [loading, setLoading] = useState(false);
@@ -18,8 +19,15 @@ function FormLogin() {
   const [password, setPassword] = useState<string>("");
   const [hidePass, setHidePass] = useState("password");
   const dispatch = useDispatch();
+  const user = useSelector((store: RootStore) => store);
 
   const passeye = require("../../assets/img/passeye.png");
+
+  function logintimeout() {setTimeout(() => {window.location.pathname="/feed";
+   
+  setLoading(false);}, 4000)};
+    
+ 
 
   const login = async (event: FormEvent) => {
     event.preventDefault();
@@ -59,19 +67,21 @@ function FormLogin() {
           })
         );
 
-        window.location.pathname = "/feed";
-        setLoading(false);
-
+       
+        
+        
+        logintimeout();
         // localStorage.setItem("token", response.data.token);
         // window.location.pathname = "/allusers";
       }
     } catch (error) {
-      setLoading(false);
+      setLoading(false);  
       notify();
     }
   };
 
   return (
+   
     <div>
       <ToastContainer
         transition={Slide}
@@ -87,9 +97,7 @@ function FormLogin() {
         theme="light"
       />
 
-      {loading ? (
-        <Loading />
-      ) : (
+      
         <div className="containerform d-flex align-items-center justify-content-center">
           <Form className="w-75" onSubmit={login}>
             <div className="container">
@@ -140,22 +148,25 @@ function FormLogin() {
                 }}
               />
             </Form.Group>
-            <div className="botaocontainer">
-              <Link
-                className="botao-criar rounded-5 btn btn-primary"
-                role="button"
-                to="/cadastro"
-              >
-                Criar conta
-              </Link>
+            {loading ? (
+        <Loading />
+      ) : (<div className="botaocontainer">
+      <Link
+        className="botao-criar rounded-5 btn btn-primary"
+        role="button"
+        to="/cadastro"
+      >
+        Criar conta
+      </Link>
 
-              <Button className="botao-login rounded-5" type="submit">
-                Fazer Login
-              </Button>
-            </div>
+      <Button className="botao-login rounded-5" type="submit">
+        Fazer Login
+      </Button>
+    </div>)}
+            
           </Form>
         </div>
-      )}
+      
     </div>
   );
 }
