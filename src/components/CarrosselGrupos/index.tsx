@@ -77,7 +77,7 @@ function CarrosselGrupos() {
           ))}
         </Swiper>
       ) : (
-        <h1 className="w-100 h-100 text-center">Sem Gruposs</h1>
+        <h1 className="w-100 h-100 text-center">Sem Grupos</h1>
       )}
     </div>
   );

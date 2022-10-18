@@ -8,6 +8,7 @@ import { useEffect } from "react";
 
 const livroicon = require("../../assets/img/livroicon.png");
 const membrosicon = require("../../assets/img/membrosicon.png");
+const gbLocale = require("date-fns/locale/en-GB");
 
 type CarrosselGruposType = {
   name: string;
@@ -19,8 +20,7 @@ type CarrosselGruposType = {
 
 
 function CardGrupos(props: CarrosselGruposType) {
-  const dateformat = new Date(props.updated_at);
-  
+  const dateformat = new Date(props.updated_at).toLocaleDateString("en-GB");
 
  // const datedif = formatDistanceToNow(dateformat);
 
@@ -43,14 +43,14 @@ function CardGrupos(props: CarrosselGruposType) {
           </div>
         </Col>
         <Col
-          className="encontrocard flex-wrap rounded-start text-dark bg-light d-flex justify-content-center align-items-center"
+          className="d-none encontrocard flex-wrap rounded-start text-dark bg-light d-flex justify-content-center align-items-center"
           md={4}
           xs={3}
         >
-          <div className="date-gcard-txt">Próximo encontro</div>
+          <div className=" date-gcard-txt">Próximo encontro</div>
         </Col>
         <Col
-          className="encontrocard bg-danger d-flex justify-content-center align-items-center"
+          className="d-none encontrocard bg-danger d-flex justify-content-center align-items-center"
           md={2}
           xs={2}
         >
@@ -64,13 +64,13 @@ function CardGrupos(props: CarrosselGruposType) {
             {props.books}
           </Card.Text>
         </Row>
-        <Row className="footercardgrupo2">
+        <Row className="footercardgrupo2 justify-content-between mt-2">
           <Col>
             <Card.Text>
               <img src={membrosicon} alt="" /> # membros
             </Card.Text>
           </Col>
-          <Col>última atividade há {"x"} dias atrás</Col>
+          <Col className="text-end">última atualização: {dateformat}</Col>
         </Row>
       </Card.Body>
     </Card>
