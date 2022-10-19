@@ -11,7 +11,7 @@ export function CardPost() {
   return (
     <Container>
       <Card className="cardposts mt-4 rounded-5 align-items-center w-100">
-        <div className="w-50 ">
+        <div className="containerposts  ">
           <div className="mb-4 d-flex justify-content-between">
             <div className="d-flex align-items-center">
               <img
@@ -36,10 +36,10 @@ export function CardPost() {
           </div>
           <div className=" mb-4 text-center">
             <h1 className="mb-4 text-start">O despertar do dragão de fogo</h1>
-            <h2 className="text-start">
+            <h3 className="text-start">
               Como os primeiros capítulos do livro criam o setting perfeito para
               a história
-            </h2>
+            </h3>
           </div>
           <div className="mb-5">
             <img className="img-fluid" src={imgpost} alt="" />
