@@ -14,7 +14,10 @@
     left: 240px;
     top: 30px;
 }
-
+ 
+.imgpost{
+    width: 150%
+}
 .cardposts {
     border: 1px solid #D9D9D9 !important
 }

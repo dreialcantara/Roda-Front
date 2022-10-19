@@ -41,8 +41,8 @@ export function CardPost() {
               a história
             </h3>
           </div>
-          <div className="mb-5">
-            <img className="img-fluid" src={imgpost} alt="" />
+          <div className="d-flex align-items-center mb-5">
+            <img className="imgpost img-fluid align-self-center" src={imgpost} alt="" />
           </div>
           <div>
             <p>

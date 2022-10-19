@@ -104,16 +104,16 @@ hr {
 }  */
 
 .passeye {
-    margin-top: 1.7%;
-    margin-left: 23%;
+    margin-top: 23px;
+    margin-left: 310px;
     position: absolute;
     cursor: pointer;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 539px) {
     .passeye {
         margin-left: 60vw;
-        margin-top: 3vh;
+        margin-top: 22px;
     }
 }
 
@@ -152,9 +152,8 @@ hr {
     color: #F68E5F;
 }
 
-.botaocontainer {
-    margin-top: 5vh;
-    margin-left: 1vw;
+.botaocontainer{
+    margin-top: 40px;
 }
 
 @media (max-width: 550px) {
@@ -170,4 +169,10 @@ hr {
     .botaocontainer {
         margin-left: 0vw;
     }
+}
+
+.formlogin   {
+
+    left: 40px !important;
+
 }
