@@ -26,7 +26,7 @@ function NavHeader() {
               {" "}
               <Nav.Link
                 href="#pricing"
-                className="text-white d-flex flex-column align-items-center"
+                className="ajudatxt text-white d-flex flex-column align-items-center"
               >
                 <img src={logoajuda} alt="" className="img-fluid w-60 mb-1" />
                 Ajuda

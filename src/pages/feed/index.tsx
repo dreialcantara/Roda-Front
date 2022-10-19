@@ -20,7 +20,9 @@ function Feed() {
         <Row className="text-start">
           <CarrosselGruposRecomendados />
         </Row>
-        <Row></Row>
+        <Row>
+          <CardPost />
+        </Row>
       </Container>
     </div>
   );
