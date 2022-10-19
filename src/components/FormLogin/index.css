@@ -156,9 +156,15 @@ hr {
     margin-top: 40px;
 }
 
+
+@media (max-width: 1370px) {
+    .botaocontainer {
+        margin-left: 15px;
+    }
+}
 @media (max-width: 550px) {
     .botaocontainer {
-        margin-left: 13vw;
+        margin-left: 50px;
     }
 }
 

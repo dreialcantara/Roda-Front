@@ -96,7 +96,7 @@ function FormLogin() {
       />
 
       <div className="containerform d-flex align-items-center justify-content-center">
-        <Form className="formlogin w-75 " onSubmit={login}>
+        <Form className="formlogin w-75" onSubmit={login}>
           <div className="containercadastro">
             <h1>Entre na Roda!</h1>
             <hr className="w-50"></hr>
@@ -148,7 +148,7 @@ function FormLogin() {
           {loading ? (
             <Loading />
           ) : (
-            <div className="botaocontainer">
+            <div className="botaocontainer text-start">
               <Link
                 className="botao-criar rounded-5 btn btn-primary"
                 role="button"
