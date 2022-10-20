@@ -3,7 +3,7 @@
 
 O projeto está em desenvolvimento, algumas funcionalidades não estão finalizadas assim como alguns componentes, a responsividade de algumas páginas ainda esta também em desenvolvimento. 
 
-## Funcionalidades Implementadas:
+## Implementado:
 
 ✔️ Comunicação com API <br>
 ✔️ Login <br>
@@ -12,8 +12,10 @@ O projeto está em desenvolvimento, algumas funcionalidades não estão finaliza
 ✔️ Card Informações Usuário<br>
 ✔️ Cadastro
 
-## Funcionalidades em Desenvolvimento Atualmente:
+## Atualmente em Desenvolvimento:
 
+:construction: Página Feed<br>
+:construction: Página Perfil<br>
 :construction: Edição de Usuário <br>
 :construction: Criação e edição de grupos <br>
 :construction: Recomendações de grupos <br>
