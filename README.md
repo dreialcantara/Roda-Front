@@ -41,7 +41,7 @@ O repositório do Back-End do projeto está disponível em https://github.com/Re
 
 # 🛠️ Abrir e rodar o projeto
 
-Para executar o projeto é somente instalar as dependências via "npm install", e executar o comando "npm start", o login e senha precisam ser criados, já está implementado utilizando API hospedada no Heroku.
+Para executar o projeto é somente instalar as dependências via "npm install", e executar o comando "npm start". Projeto criado utilizando Create-React-App. o login e senha precisam ser válidos, já está implementado utilizando API hospedada no Heroku.
 ## ✔️ Técnicas e tecnologias utilizadas
 
 - ``HTML``
