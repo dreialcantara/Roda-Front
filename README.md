@@ -1,46 +1,62 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# :construction: Projeto em Construção :construction:
 
-## Available Scripts
+O projeto está em desenvolvimento, algumas funcionalidades não estão finalizadas assim como alguns componentes, a responsividade de algumas páginas ainda esta também em desenvolvimento. 
 
-In the project directory, you can run:
+## Funcionalidades Implementadas:
 
-### `npm start`
+✔️ Comunicação com API <br>
+✔️ Login <br>
+✔️ Logout <br>
+✔️ Grupos do Usuário<br>
+✔️ Card Informações Usuário<br>
+✔️ Cadastro
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Funcionalidades em Desenvolvimento Atualmente:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+:construction: Edição de Usuário <br>
+:construction: Criação e edição de grupos <br>
+:construction: Recomendações de grupos <br>
+:construction: Adicionar e Gerenciar Amigos <br>
+:construction: Feed de Posts <br>
+:construction: Notificações <br>
+:construction: Chat ao vivo <br>
+:construction: Desafios do mês <br>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 📁 Acesso ao projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+O repositório do Front-End do projeto está disponível em https://github.com/dreialcantara/Roda-Front <br>
+O repositório do Back-End do projeto está disponível em https://github.com/Reygis/Roda-api <br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+# 🛠️ Abrir e rodar o projeto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para executar o projeto é somente instalar as dependências via "npm install", e executar o comando "npm start", o login e senha precisam ser criados, já está implementado utilizando API hospedada no Heroku.
+## ✔️ Técnicas e tecnologias utilizadas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ``HTML``
+- ``CSS``
+- ``TYPESCRIPT``
+- ``REACT``
+- ``REDUX``
+- ``AXIOS``
+- ``BOOTSTRAP``
+
+
+
+
+
+
+
+
+
+
+
