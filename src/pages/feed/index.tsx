@@ -18,9 +18,9 @@ function Feed() {
           <CarrosselGrupos />
         </Row>
         <Row className="text-start">
-          <CarrosselGruposRecomendados />
+          {/* <CarrosselGruposRecomendados /> */}
         </Row>
-        <Row>
+        <Row className="mt-4">
           <CardPost />
         </Row>
       </Container>
