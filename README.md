@@ -8,9 +8,10 @@ O projeto está em desenvolvimento, algumas funcionalidades não estão finaliza
 ✔️ Comunicação com API <br>
 ✔️ Login <br>
 ✔️ Logout <br>
+✔️ Cadastro <br>
 ✔️ Grupos do Usuário<br>
 ✔️ Card Informações Usuário<br>
-✔️ Cadastro
+
 
 ## Atualmente em Desenvolvimento:
 
