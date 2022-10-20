@@ -14,14 +14,20 @@ O projeto está em desenvolvimento, algumas funcionalidades não estão finaliza
 
 ## Funcionalidades em Desenvolvimento Atualmente:
 
-:construction: Chat ao vivo <br>
-:construction: Recomendações de grupos <br>
-:construction: Criação e edição de grupos <br>
-:construction: Feed de Posts <br>
-:construction: Desafios do mês <br>
-:construction: Notificações <br>
 :construction: Edição de Usuário <br>
+:construction: Criação e edição de grupos <br>
+:construction: Recomendações de grupos <br>
 :construction: Adicionar e Gerenciar Amigos <br>
+:construction: Feed de Posts <br>
+:construction: Notificações <br>
+:construction: Chat ao vivo <br>
+:construction: Desafios do mês <br>
+
+
+
+
+
+
 
 
 
