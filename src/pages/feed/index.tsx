@@ -26,6 +26,12 @@ function Feed() {
         <Row className="mt-4">
           <CardPost />
         </Row>
+        <Row className="mt-4">
+          <CardPost />
+        </Row>
+        <Row className="mt-4">
+          <CardPost />
+        </Row>
       </Container>
     </div>
   );
