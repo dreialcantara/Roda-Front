@@ -50,8 +50,8 @@ function CardGrupos(props: CarrosselGruposType) {
       </Row>
       <Card.Body>
         <Row className="footercardgrupo mt-5">
-          <Card.Text>
-            <img src={livroicon} alt="" />
+          <Card.Text className="px-2">
+            <img src={livroicon} className="mx-1" alt="" />
             {props.books}
           </Card.Text>
         </Row>
