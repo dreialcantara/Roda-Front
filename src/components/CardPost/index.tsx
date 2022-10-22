@@ -66,7 +66,7 @@ export function CardPost() {
             </figcaption>
           </div>
           <div>
-            <div className={`mb-2 d-${openSubtitle}`}>
+            <div className={`mb-2 d-flex d-${openSubtitle}`}>
               <div className="vr"></div>
               <div>
                 <p className="cardpost-textintro px-4">
