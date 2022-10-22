@@ -13,8 +13,8 @@ a {
     height: 34px;
     padding: 0;
     position: absolute;
-    left: 240px;
-    top: 50px;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
 .imgpost {
