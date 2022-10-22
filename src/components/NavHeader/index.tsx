@@ -4,12 +4,10 @@ import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import { useDispatch, useSelector } from "react-redux";
 import { RootStore } from "../../store";
-import Dropdown from "react-bootstrap/Dropdown";
 import { removeUser } from "../../store/modules/user";
 
 import "./index.css";
 import { NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const logo = require("../../assets/img/Logo.png");
 const grupoicon = require("../../assets/img/grupoicon.png");
@@ -59,18 +57,18 @@ function NavHeader() {
         <div className="">
           {" "}
           <Nav className="align-items-center justify-content-between">
-            <div className="px-2">
+            <div className="gruponav px-2">
               <Nav.Link href="#">
                 <img src={grupoicon} alt="" />
               </Nav.Link>
             </div>
-            <div className="px-2">
+            <div className="chatnav px-2">
               {" "}
               <Nav.Link href="#">
                 <img src={chaticon} alt="" />
               </Nav.Link>
             </div>
-            <div className="px-2">
+            <div className="notificationnav px-2">
               {" "}
               <Nav.Link href="#">
                 <img src={notificationicon} alt="" />
