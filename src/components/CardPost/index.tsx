@@ -34,7 +34,7 @@ export function CardPost() {
   return (
     <Container>
       <Card className="cardposts mt-3 rounded-5 align-items-center w-100">
-        <div className="containerposts mt-4 ">
+        <div className="containerposts mt-4">
           <div className="mb-4 d-flex justify-content-between">
             <div className="d-flex align-items-center">
               <img
@@ -48,12 +48,16 @@ export function CardPost() {
                 alt=""
               />
               <div className="flex-column mx-3">
-                <div className="cardpost-titulogrupo">TAVERNA DO DRAGÃO</div>{" "}
-                <div className="cardpost-txtheader">Thiago Moreira</div>
+                <div role="button" className="cardpost-titulogrupo">
+                  TAVERNA DO DRAGÃO
+                </div>{" "}
+                <div role="button" className="cardpost-txtheader">
+                  Thiago Moreira
+                </div>
               </div>
             </div>
             <div className="cardpost-txtheader text-end align-items-start">
-              <div>...</div>
+              <div role="button">...</div>
               <div>FANTASIA</div>
               <div>Eragon (cap 03)</div>
             </div>
@@ -105,7 +109,14 @@ export function CardPost() {
                 auctor purus luctus enim egestas, ac scelerisque ante pulvinar.
                 Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor
                 urna. Curabitur vel bibendum lorem. Morbi convallis convallis
-                diam sit amet lacinia. Aliquam in elementum tellus.
+                diam sit amet lacinia. Aliquam in elementum tellus. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
+                fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+                tellus elit sed risus. Maecenas eget condimentum velit, sit amet
+                feugiat lectus. Class aptent taciti sociosqu ad litora torquent
+                per conubia nostra, per inceptos himenaeos. Praesent auctor
+                purus luctus enim egestas, ac scelerisque ante pulvinar.
               </div>
             </Collapse>
 

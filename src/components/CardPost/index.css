@@ -39,6 +39,16 @@ a {
     width: 50vw;
 }
 
+@media(max-width: 600px) {
+    .containerposts {
+        width: 100%;
+    }
+
+    .cardposts {
+        border: none !important;
+    }
+}
+
 .cardpost-titulogrupo {
     font-family: Source Sans Pro;
     font-size: 20px;
@@ -132,6 +142,8 @@ a {
 }
 
 .no-select {
-
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
