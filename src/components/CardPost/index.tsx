@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
 
@@ -18,6 +18,18 @@ export function CardPost() {
   const [open, setOpen] = useState(false);
   const [namebutton, setNameButton] = useState("Continuar Lendo");
   const [openSubtitle, setOpenSubtitle] = useState("");
+  const [likeCount, setLikeCount] = useState(0);
+  const [like, setLike] = useState(false);
+
+  function likeFunction() {
+    if (like === false) {
+      setLikeCount(likeCount + 1);
+      setLike(true);
+    } else {
+      setLikeCount(likeCount - 1);
+      setLike(false);
+    }
+  }
 
   return (
     <Container>
@@ -121,7 +133,7 @@ export function CardPost() {
           <div className="footercardpost d-flex justify-content-between mx-2">
             <div>
               <img className="mx-1" src={hearticon} alt="" />
-              <img src={likeicon} alt="" /> 2
+              <img src={likeicon} alt="" /> {likeCount}
             </div>
             <div>
               <p>## comentários</p>
@@ -129,14 +141,22 @@ export function CardPost() {
           </div>
           <hr></hr>
           <div className="footercardpost mt-2 mb-2 d-flex justify-content-around">
-            <div>
-              <img src={hearticonmd} alt="" /> Curtir
+            <div className="">
+              <img
+                className=""
+                role="button"
+                onClick={likeFunction}
+                src={hearticonmd}
+                alt=""
+              />{" "}
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a onClick={likeFunction}>Curtir</a>
             </div>
             <div>
-              <img src={iconcomentar} alt="" /> Comentar
+              <img role="button" src={iconcomentar} alt="" /> Comentar
             </div>
             <div>
-              <img src={icondm} alt="" /> Enviar Mensagem
+              <img role="button" src={icondm} alt="" /> Enviar Mensagem
             </div>
           </div>
         </div>
