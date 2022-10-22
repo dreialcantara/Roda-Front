@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
 
 import "./index.css";
+import "animate.css";
 
 export function CardPost() {
   const icongrupopost = require("../../assets/img/icongrupopost.png");
@@ -20,14 +21,23 @@ export function CardPost() {
   const [openSubtitle, setOpenSubtitle] = useState("");
   const [likeCount, setLikeCount] = useState(0);
   const [like, setLike] = useState(false);
+  const [animationLike, setAnimationLike] = useState("");
 
   function likeFunction() {
     if (like === false) {
       setLikeCount(likeCount + 1);
       setLike(true);
+      setAnimationLike("animate__heartBeat");
+      setTimeout(() => {
+        setAnimationLike("");
+      }, 1500);
     } else {
       setLikeCount(likeCount - 1);
       setLike(false);
+      setAnimationLike("animate__heartBeat");
+      setTimeout(() => {
+        setAnimationLike("");
+      }, 1500);
     }
   }
 
@@ -153,7 +163,11 @@ export function CardPost() {
           <hr></hr>
           <div className="no-select footercardpost mt-2 mb-2 d-flex justify-content-around">
             <div role="button" onClick={likeFunction} className="">
-              <img className="mx-1" src={hearticonmd} alt="" />
+              <img
+                className={`mx-1 animate__animated ${animationLike}`}
+                src={hearticonmd}
+                alt=""
+              />
               Curtir
             </div>
             <div role="button">

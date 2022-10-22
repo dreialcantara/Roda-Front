@@ -26,6 +26,8 @@
 
     "@types/swiper": "^6.0.0",
 
+    "animate.css": "^4.1.1",
+
     "axios": "^0.27.2",
 
     "bootstrap": "^5.2.1",
