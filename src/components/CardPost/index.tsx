@@ -140,23 +140,16 @@ export function CardPost() {
             </div>
           </div>
           <hr></hr>
-          <div className="footercardpost mt-2 mb-2 d-flex justify-content-around">
-            <div className="">
-              <img
-                className=""
-                role="button"
-                onClick={likeFunction}
-                src={hearticonmd}
-                alt=""
-              />{" "}
-              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-              <a onClick={likeFunction}>Curtir</a>
+          <div className="no-select footercardpost mt-2 mb-2 d-flex justify-content-around">
+            <div role="button" onClick={likeFunction} className="">
+              <img className="mx-1" src={hearticonmd} alt="" />
+              Curtir
             </div>
-            <div>
-              <img role="button" src={iconcomentar} alt="" /> Comentar
+            <div role="button">
+              <img src={iconcomentar} alt="" /> Comentar
             </div>
-            <div>
-              <img role="button" src={icondm} alt="" /> Enviar Mensagem
+            <div role="button">
+              <img src={icondm} alt="" /> Enviar Mensagem
             </div>
           </div>
         </div>

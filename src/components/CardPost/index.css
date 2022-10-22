@@ -130,3 +130,8 @@ a {
     text-align: left;
 
 }
+
+.no-select {
+
+    user-select: none;
+}
