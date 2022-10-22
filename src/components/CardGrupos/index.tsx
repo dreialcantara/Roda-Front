@@ -1,6 +1,5 @@
 import { Col, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import { format, formatDistanceToNow, parse, parseISO } from "date-fns";
 
 import "./index.css";
 

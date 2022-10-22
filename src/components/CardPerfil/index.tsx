@@ -1,8 +1,9 @@
-import { Container } from "react-bootstrap";
+import { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { useSelector } from "react-redux";
+import { ListarGrupos } from "../../services/MainApi/listargrupos";
 import { RootStore } from "../../store";
 
 import "./index.css";
@@ -12,6 +13,27 @@ const vetoramg = require("../../assets/img/vetoramg.png");
 
 function CardPerfil() {
   const user = useSelector((store: RootStore) => store);
+
+  // GET INFO DE GRUPOS DO USUARIO
+  const [grupos, setGrupos] = useState(Array<gruposType>);
+
+  type gruposType = {
+    name: string;
+    books: string;
+    idgroup?: number;
+    updated_at: string;
+  };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await ListarGrupos(user.token);
+
+      setGrupos(response.data);
+    };
+    fetchData();
+    console.log(grupos);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="mt-3 d-flex justify-content-center align-items-start">
@@ -37,7 +59,7 @@ function CardPerfil() {
                   src={vetorgrupos}
                   alt=""
                 />{" "}
-                8 Grupos
+                {grupos.length} Grupos
               </Col>
             </Row>
             <Row className="biotxt w-100">{user.bio}</Row>
