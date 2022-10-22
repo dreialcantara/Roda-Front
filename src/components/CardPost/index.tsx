@@ -46,8 +46,8 @@ export function CardPost() {
               <div>Eragon (cap 03)</div>
             </div>
           </div>
-          <div className=" mb-4 text-center">
-            <h1 className="mb-4 text-start cardpost-titulopost">
+          <div className=" mt-5 mb-5 text-center">
+            <h1 className="mb-3 text-start cardpost-titulopost">
               O despertar do dragão de fogo
             </h1>
             <h3 className="text-start cardpost-subtitulopost">
