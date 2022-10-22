@@ -2,26 +2,110 @@
     width: 46px;
     height: 43px;
     padding: 0;
-    margin-left: 15px;
 }
 
 .iconusuariopost {
     width: 34px;
     height: 34px;
     padding: 0;
-    margin-left: 15px;
     position: absolute;
     left: 240px;
     top: 30px;
 }
- 
-.imgpost{
+
+.imgpost {
     width: 150%
 }
+
+.figure-caption {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
 .cardposts {
     border: 1px solid #D9D9D9 !important
 }
 
 .containerposts {
     width: 50vw;
+}
+
+.cardpost-titulogrupo {
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.cardpost-titulopost {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.cardpost-subtitulopost {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+.cardpost-textintro {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+
+.cardpost-txtheader {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+
+
+}
+
+.botao-expand {
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 31px;
+    background-color: white;
+
+}
+
+.vr {
+    min-height: 100%;
+    opacity: 1;
+    border: solid 1px;
+}
+
+.footercardpost {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }

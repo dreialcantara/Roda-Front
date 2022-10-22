@@ -10,7 +10,6 @@ function perfil() {
     <div>
       <NavHeader />
       <CardPerfil />
-      <CarrosselPropostas />
     </div>
   );
 }
