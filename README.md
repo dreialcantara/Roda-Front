@@ -1,7 +1,7 @@
 
 # :construction: Projeto em Construção :construction:
 
-O projeto está em desenvolvimento, algumas funcionalidades não estão finalizadas assim como alguns componentes, a responsividade de algumas páginas ainda esta também em desenvolvimento. 
+O projeto está em desenvolvimento, algumas funcionalidades não estão finalizadas assim como alguns componentes, a responsividade de algumas páginas ainda está também em desenvolvimento. 
 
 ## Implementado:
 
