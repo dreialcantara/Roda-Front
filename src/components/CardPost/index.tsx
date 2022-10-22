@@ -69,7 +69,7 @@ export function CardPost() {
             <div className={`mb-2 d-${openSubtitle}`}>
               <div className="vr"></div>
               <div>
-                <p className=" cardpost-textintro px-4">
+                <p className="cardpost-textintro px-4">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                   eu turpis molestie, dictum est a, mattis tellus. Sed
                   dignissim, metus nec fringilla accumsan, risus sem
@@ -83,7 +83,7 @@ export function CardPost() {
             </div>
 
             <Collapse in={open}>
-              <div id="example-collapse-text">
+              <div className="cardpost-text" id="example-collapse-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
                 metus nec fringilla accumsan, risus sem sollicitudin lacus, ut

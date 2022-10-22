@@ -72,8 +72,25 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 
+.cardpost-text {
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
 
 .cardpost-txtheader {
     font-family: Source Sans Pro;
