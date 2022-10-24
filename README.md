@@ -22,6 +22,7 @@ Para executar o projeto é somente instalar as dependências via "npm install", 
 - ``REDUX``
 - ``AXIOS``
 - ``BOOTSTRAP``
+- ``SWIPER``
 
 ## Implementado:
 
