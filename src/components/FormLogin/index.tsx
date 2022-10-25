@@ -149,13 +149,12 @@ function FormLogin() {
             <Loading />
           ) : (
             <div className="botaocontainer  d-flex justify-content-center text-start">
-              <Link to="/cadastro">
-                <Button
-                  className=" px-lg-5 px-5 p-lg-3 p-1   botao-criar rounded-5 btn btn-primary"
-                  role="button"
-                >
-                  Criar conta
-                </Button>
+              <Link
+                to="/cadastro"
+                className=" px-lg-5 px-5 p-lg-3 p-1   botao-criar rounded-5 btn btn-primary"
+                role="button"
+              >
+                Criar conta
               </Link>
 
               <Button
