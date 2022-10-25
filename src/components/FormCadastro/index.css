@@ -3,10 +3,7 @@
     color: #324376;
     border-color: #324376;
 
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+
     font-size: 12px;
     font-weight: 700 !important;
 
@@ -24,14 +21,12 @@
     background-color: #324376;
     color: white;
     border-color: #324376;
-    margin-left: 1vw;
 
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+
+
+
     font-size: 12px;
-    position: absolute;
+
     font-weight: 700 !important;
 
 
@@ -89,19 +84,8 @@ hr {
     margin-top: 0vh;
 }
 
-/* @media (max-width: 1200px) {
-    .containerformcadastro {
 
-        margin-top: 5vh;
-    }
-}
 
-@media (max-width: 819px) {
-    .containerformcadastro {
-
-        margin-top: 20vh;
-    }
-} */
 
 
 
@@ -141,4 +125,3 @@ hr {
     font-family: "Source Sans Pro";
     color: #F68E5F;
 }
-

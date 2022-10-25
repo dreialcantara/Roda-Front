@@ -201,16 +201,19 @@ function FormCadastro() {
             ""
           )}
         </Form.Group>
-        <div className="botaocontainer">
+        <div className="botaocontainer d-flex justify-content-center">
           <Link
-            className="botao-criar rounded-5 btn btn-primary"
+            className="px-lg-5 px-5 p-lg-3 p-1 botao-criar rounded-5 btn btn-primary"
             role="button"
             to="/"
           >
             Fazer Login
           </Link>
 
-          <Button className="botao-login rounded-5" type="submit">
+          <Button
+            className="px-lg-5 px-5 p-lg-3 p-1 botao-login rounded-5"
+            type="submit"
+          >
             Criar Conta
           </Button>
         </div>

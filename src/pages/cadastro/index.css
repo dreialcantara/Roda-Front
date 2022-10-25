@@ -1,12 +1,9 @@
-
-
 ul {
     list-style: none !important;
     display: flex;
-    margin-right: 12vw;
-    margin-top: -6vh;
-    display: flex;
-    justify-content: end;
+
+
+
 }
 
 li {
@@ -22,6 +19,7 @@ li {
 
 }
 
+
 a {
     text-decoration: none !important;
 }
@@ -31,5 +29,5 @@ a {
         display: none;
     }
 
-   
+
 }

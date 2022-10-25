@@ -148,16 +148,20 @@ function FormLogin() {
           {loading ? (
             <Loading />
           ) : (
-            <div className="botaocontainer text-start">
-              <Link
-                className="botao-criar rounded-5 btn btn-primary"
-                role="button"
-                to="/cadastro"
-              >
-                Criar conta
+            <div className="botaocontainer  d-flex justify-content-center text-start">
+              <Link to="/cadastro">
+                <Button
+                  className=" px-lg-5 px-5 p-lg-3 p-1   botao-criar rounded-5 btn btn-primary"
+                  role="button"
+                >
+                  Criar conta
+                </Button>
               </Link>
 
-              <Button className="botao-login rounded-5" type="submit">
+              <Button
+                className="px-lg-5 px-5 p-lg-3 p-1 botao-login rounded-5"
+                type="submit"
+              >
                 Fazer Login
               </Button>
             </div>

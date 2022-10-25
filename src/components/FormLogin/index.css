@@ -3,10 +3,7 @@
     color: #324376;
     border-color: #324376;
 
-    padding-left: 42px;
-    padding-right: 42px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+
     font-size: 12px;
     font-weight: 700 !important;
 
@@ -24,14 +21,11 @@
     background-color: #324376;
     color: white;
     border-color: #324376;
-    margin-left: 1vw;
+    margin-left: 15px;
 
-    padding-left: 42px;
-    padding-right: 42px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+
     font-size: 12px;
-    position: absolute;
+
     font-weight: 700 !important;
 
 
@@ -86,22 +80,17 @@ hr {
 }
 
 .containerform {
-    margin-top: 25vh;
+    margin-top: 150px;
 }
 
-@media (max-width: 1200px) {
+
+
+@media (max-width: 992px) {
     .containerform {
 
         margin-top: 0vh;
     }
 }
-
-/* @media (max-width: 819px) {
-    .containerform {
-
-        margin-top: 25vh;
-    }
-}  */
 
 .passeye {
     margin-top: 23px;
@@ -152,32 +141,16 @@ hr {
     color: #F68E5F;
 }
 
-.botaocontainer{
+.botaocontainer {
     margin-top: 40px;
 }
 
 
-@media (max-width: 1370px) {
-    .botaocontainer {
-        margin-left: 15px;
-    }
-}
-@media (max-width: 550px) {
-    .botaocontainer {
-        margin-left: 50px;
-    }
-}
-
-;
 
 
-@media (max-width: 900px) {
-    .botaocontainer {
-        margin-left: 0vw;
-    }
-}
 
-.formlogin   {
+
+.formlogin {
 
     left: 40px !important;
 
