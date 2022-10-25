@@ -16,6 +16,8 @@ function CarrosselGrupos() {
     books: string;
     idgroup?: number;
     updated_at: string;
+    label?: string | null;
+    numberofusers?: number;
   };
 
   const user = useSelector((store: RootStore) => store);
@@ -64,6 +66,8 @@ function CarrosselGrupos() {
                 updated_at={grupos.updated_at as string}
                 name={grupos.name as string}
                 books={grupos.books as string}
+                label={grupos.label as string}
+                numberofusers={grupos.numberofusers}
               />
             </SwiperSlide>
           ))}

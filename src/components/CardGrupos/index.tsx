@@ -11,6 +11,8 @@ type CarrosselGruposType = {
   books: string;
   key?: number;
   updated_at: string;
+  label?: string | null;
+  numberofusers?: number;
 };
 
 function CardGrupos(props: CarrosselGruposType) {
@@ -27,9 +29,14 @@ function CardGrupos(props: CarrosselGruposType) {
       <Row className="mt-4 gx-0 ">
         {/* retirar  w-100 da Col abaixo quando tornar o card de próximo encontro novamente ativo*/}
         <Col className="w-100 text-left headercardgrupos" md={6} xs={7}>
-          <div className="titulocardgrupo">{props.name}</div>
-          <div className="labelgrupo rounded-5 d-flex justify-content-center">
-            LABEL
+          <div role="button" className="titulocardgrupo">
+            {props.name}
+          </div>
+          <div
+            role="button"
+            className={`label-${props.label} labelgrupo  rounded-5 d-flex justify-content-center`}
+          >
+            {`${props.label}`}
           </div>
         </Col>
         <Col
@@ -57,7 +64,7 @@ function CardGrupos(props: CarrosselGruposType) {
         <Row className="footercardgrupo2 justify-content-between mt-2">
           <Col>
             <Card.Text>
-              <img src={membrosicon} alt="" /> # membros
+              <img src={membrosicon} alt="" /> {props.numberofusers} membros
             </Card.Text>
           </Col>
           <Col className="text-end">última atualização: {dateformat}</Col>

@@ -36,6 +36,22 @@
     line-height: 20px;
 }
 
+.label-Romance {
+    background-color: #F76C5E !important;
+}
+
+.label-Policial {
+    background-color: #586BA4 !important;
+}
+
+.label-Sci-Fi {
+    background-color: #D2D2D2 !important;
+}
+
+.label-Terror {
+    background-color: #2E3B63
+}
+
 .encontrocard {
 
     height: 38px;
