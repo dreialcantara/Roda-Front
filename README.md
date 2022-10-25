@@ -8,7 +8,7 @@ O projeto está em desenvolvimento, algumas funcionalidades não estão finaliza
 
 O repositório do Front-End do projeto está disponível em https://github.com/dreialcantara/Roda-Front <br>
 O repositório do Back-End do projeto está disponível em https://github.com/Reygis/Roda-api <br>
-
+O deploy da Demo do projeto está disponível em http://roda-lovat.vercel.app/
 
 # 🛠️ Rodar o projeto
 
